@@ -317,6 +317,9 @@ html.fp-enabled,
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60764f576f4a2ff8af71b9db_arrow-right.png), auto;
 }
 
+/*gallery-section section style starts*/
+
+
 .gallery-section .swiper-container .swiper-pagination-bullets {
     bottom: 122px !important;
 }
@@ -325,9 +328,22 @@ html.fp-enabled,
     height: calc(100vh - 180px);
 }
 
+/*gallery-section section style ends*/
+
+
+/*nav section style starts*/
+
 .nav-section .swiper-slide {
     width: calc(50% - 30px) !important;
 }
+
+.nav-section .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 30px;
+    right: 30px;
+    width: auto;
+}
+
+/*nav section style ends*/
 
 .news-section .swiper-slide {
     width: calc((100% - 180px) / 3) !important;
