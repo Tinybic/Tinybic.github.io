@@ -325,6 +325,33 @@ html.fp-enabled,
     height: calc(100vh - 180px);
 }
 
+.nav-section .swiper-slide {
+    width: calc(50% - 30px) !important;
+}
+
+.news-section .swiper-slide {
+    width: calc((100% - 180px) / 3) !important;
+}
+
+.square:hover > div {
+    color: #c6e6ff;
+}
+
+@media screen and (min-width: 1921px) {
+    .home .logo, .news .logo {
+        left: calc((100vw - 1800px) / 2);
+    }
+    .home .menu {
+        right: calc((100vw - 1800px) / 2);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .nav-section .swiper-slide {
+        width: calc(50% - 60px) !important;
+    }
+}
+
 
 @media screen and (max-width: 1279px) {
     html {
