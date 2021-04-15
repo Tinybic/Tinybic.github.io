@@ -333,6 +333,11 @@ html.fp-enabled,
     transform-style: preserve-3d;
 }
 
+.sidebar-contain-active{
+    display: flex;
+    transform: translate(0, 0);
+}
+
 /*gallery-section section style starts*/
 .gallery-section .swiper-container .swiper-pagination-bullets {
     bottom: 122px !important;
