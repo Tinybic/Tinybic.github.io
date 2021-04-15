@@ -357,7 +357,7 @@ html.fp-enabled,
 
 .nav-section .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 30px;
-    right: 30px;
+    right: 60px;
     width: auto;
     left: auto;
 }
@@ -409,6 +409,10 @@ html.fp-enabled,
 
     .news-section .swiper-slide {
         width: calc((100% - 90px) / 3) !important;
+    }
+
+    .nav-section .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        right: 30px;
     }
 }
 
