@@ -1,3 +1,16 @@
+:root {
+    --pink: #f54544;
+    --white: #fff;
+    --black: #000;
+    --post-blue: #0016c1;
+    --post-shop: #34885d;
+    --post-work: #994b03;
+    --post-music: #676767;
+    --post-sky: #2db2eb;
+    --link-hover: #c6e6ff;
+    --link-hover-dark: #7dc1ff;
+}
+
 html {
     font-size: 16px;
 }
@@ -369,10 +382,17 @@ html.fp-enabled,
 /*nav section style ends*/
 
 
-
+/*news section style starts*/
 .news-section .swiper-slide {
     width: calc((100% - 180px) / 3) !important;
 }
+.news-section .news-item:hover .news-type,
+.news-section .news-item:hover .news-title,
+.news-section .news-item:hover .news-date{
+    color: var(--link-hover);
+}
+
+/*news section style ends*/
 
 
 
