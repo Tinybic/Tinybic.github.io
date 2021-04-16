@@ -368,7 +368,10 @@ html.fp-enabled,
     width: calc(50% - 30px) !important;
 }
 
-.nav-section .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+.nav-section .swiper-container-horizontal>.swiper-pagination-bullets,
+.news-section .swiper-container-horizontal>.swiper-pagination-bullets,
+.info-section .swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 30px;
     right: 60px;
     width: auto;
@@ -431,7 +434,10 @@ html.fp-enabled,
         width: calc((100% - 90px) / 3) !important;
     }
 
-    .nav-section .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    .nav-section .swiper-container-horizontal>.swiper-pagination-bullets,
+    .news-section .swiper-container-horizontal>.swiper-pagination-bullets,
+    .info-section .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom, .swiper-pagination-fraction{
         right: 30px;
     }
 }
