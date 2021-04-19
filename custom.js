@@ -11,11 +11,11 @@ $(document).ready(function () {
                         $('#upperLogo').css('zIndex', 0);
                     }, 400);
                     //$('#upperLogo').hide();
-                } else {
-                    setTimeout(function () {
-                        $('#upperLogo').css('zIndex', 2);
-                    }, 400);
                 }
+            }else {
+                setTimeout(function () {
+                    $('#upperLogo').css('zIndex', 2);
+                }, 400);
             }
         }
     });
