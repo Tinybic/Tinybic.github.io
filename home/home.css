@@ -478,7 +478,7 @@ html.fp-enabled,
 }
 
 @media screen and (max-width: 479px) {
-    .news-section .news-swiper-container-sml .swiper-slide {
+    .news-section .news-swiper-container-xs .swiper-slide {
         width: 100% !important;
     }
 }
