@@ -6,7 +6,7 @@ $(document).ready(function () {
         onLeave: function (origin, destination, direction) {
             if ((origin.index === 0 && destination.index === 1) || (origin.index === 2 && destination.index === 1)) {
                 console.log(window.innerWidth);
-                if(window.innerWidth>=990){
+                if(window.innerWidth>990){
                     setTimeout(function () {
                         $('#upperLogo').css('zIndex', 0);
                     }, 400);
