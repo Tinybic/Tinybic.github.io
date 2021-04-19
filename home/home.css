@@ -470,5 +470,15 @@ html.fp-enabled,
         width: 100% !important;
         height: 100% !important;
     }
+
+    .news-section .swiper-slide {
+        width: calc((100% - 60px) / 2) !important;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .news-section .news-swiper-container-sml .swiper-slide {
+        width: 100% !important;
+    }
 }
 /*media query ends*/
