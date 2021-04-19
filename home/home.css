@@ -473,6 +473,7 @@ html.fp-enabled,
 
     .news-section .swiper-slide {
         width: calc((100% - 60px) / 2) !important;
+        margin: 0 15px;
     }
 }
 
