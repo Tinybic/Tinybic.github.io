@@ -449,9 +449,9 @@ html.fp-enabled,
         border: solid 1px #fff !important;
     }
 
-    /*.gallery-section .img-bg {*/
-    /*    height: calc(66.7vw - 60px);*/
-    /*}*/
+    .gallery-section .img-bg {
+        height: 70vw;
+    }
 
     .swiper-container .swiper-pagination-bullets,
     .gallery-section .swiper-container .swiper-pagination-bullets{
