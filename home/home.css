@@ -449,11 +449,12 @@ html.fp-enabled,
         border: solid 1px #fff !important;
     }
 
-    .gallery-section .img-bg {
-        height: calc(66.7vw - 60px);
-    }
+    /*.gallery-section .img-bg {*/
+    /*    height: calc(66.7vw - 60px);*/
+    /*}*/
 
-    .swiper-container .swiper-pagination-bullets {
+    .swiper-container .swiper-pagination-bullets,
+    .gallery-section .swiper-container .swiper-pagination-bullets{
         bottom: 30px !important;
         right: 30px !important;
         left: auto !important;
