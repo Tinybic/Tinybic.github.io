@@ -465,5 +465,10 @@ html.fp-enabled,
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
         display: none;
     }
+
+    .nav-section .nav-swiper-container-sml .swiper-slide{
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
 /*media query ends*/
