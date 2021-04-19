@@ -3,6 +3,8 @@ $(document).ready(function () {
         licenseKey: 'YOUR_KEY_HERE',
         scrollBar: true,
         scrollingSpeed: 500,
+        touchSensitivity:10,
+        normalScrollElements: ".sidebar",
         onLeave: function (origin, destination, direction) {
             if ((origin.index === 0 && destination.index === 1) || (origin.index === 2 && destination.index === 1)) {
                 console.log(window.innerWidth);

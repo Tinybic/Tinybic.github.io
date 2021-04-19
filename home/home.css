@@ -397,7 +397,9 @@ html.fp-enabled,
 
 /*news section style ends*/
 
-
+.info-section .collaborator a{
+    color: #fff;
+}
 
 /*media query starts*/
 @media screen and (min-width: 1921px) {
