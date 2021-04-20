@@ -401,8 +401,8 @@ html.fp-enabled,
 .info-section .collaborator a{
     color: #fff;
 }
-.info-section .collaborator .w-embed:before,
-.info-section .collaborator .w-embed:after{
+.info-section .w-richtext:before,
+.info-section .w-richtext:after{
     content: none;
 }
 /*info-section style ends*/
