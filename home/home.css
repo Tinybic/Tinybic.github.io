@@ -410,7 +410,7 @@ html.fp-enabled,
 .info-section .w-embed:after{
     content: none;
 }
-.info-section .layout1 .info-img:after{
+.info-section .layout1 .info-img-hover:after{
     position: absolute;
     content: " ";
     left: 0;

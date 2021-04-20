@@ -52,15 +52,37 @@ $(document).ready(function () {
         closeSide();
     })
 
-    $('#infoImage').hover(()=>{
+
+    function infoHover(){
         $('#infoTitle').css('color','#c6e6ff');
         $('#infoLearnMore').css('color','#c6e6ff');
         $('#infoImage').addClass('info-img-hover');
-    },()=>{
+    }
+
+    function infoHoverOut(){
         $('#infoTitle').css('color','#ffffff');
         $('#infoLearnMore').css('color','#ffffff');
         $('#infoImage').removeClass('info-img-hover');
+    }
+
+    $('#infoImage').hover(()=>{
+        infoHover();
+    },()=>{
+        infoHoverOut();
     })
+
+    $('#infoTitle').hover(()=>{
+        infoHover();
+    },()=>{
+        infoHoverOut();
+    })
+
+    $('#infoLearnMore').hover(()=>{
+        infoHover();
+    },()=>{
+        infoHoverOut();
+    })
+
 
     const myGallerySwiper = new Swiper('.gallery-swiper-container', {
         // Optional parameters
