@@ -378,7 +378,10 @@ html.fp-enabled,
     left: auto;
 }
 
-.square:hover > div {
+.square:hover > div,
+.square:hover .square-desc,
+.square:hover .learn-text,
+.square:hover .learn-more-svg{
     color: #c6e6ff;
 }
 
