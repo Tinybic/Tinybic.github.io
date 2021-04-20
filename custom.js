@@ -51,9 +51,15 @@ $(document).ready(function () {
     $('.sidebar-space').click(function (e) {
         closeSide();
     })
+
     $('#infoImage').hover(()=>{
         $('#infoTitle').css('color','#c6e6ff');
         $('#infoLearnMore').css('color','#c6e6ff');
+        $('#infoImage').addClass('info-img-hover');
+    },()=>{
+        $('#infoTitle').css('color','#ffffff');
+        $('#infoLearnMore').css('color','#ffffff');
+        $('#infoImage').removeClass('info-img-hover');
     })
 
     const myGallerySwiper = new Swiper('.gallery-swiper-container', {
