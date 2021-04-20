@@ -417,6 +417,8 @@ html.fp-enabled,
     right: 0;
     top: 0;
     bottom: 0;
+}
+.info-section .layout1 .info-img:hover .info-img:after{
     background-color: rgba(0,22,193,0.15);
 }
 /*info-section style ends*/
