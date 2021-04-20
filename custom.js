@@ -56,16 +56,16 @@ $(document).ready(function () {
     function infoHover(){
         $('.info-title-hover').css('color','#c6e6ff');
         $('.info-learn-more-hover').css('color','#c6e6ff');
-        $('._info-img-hover').addClass('info-img-hover');
+        $('.info-image-layout1').addClass('info-img-hover');
     }
 
     function infoHoverOut(){
         $('.info-title-hover').css('color','#ffffff');
         $('.info-learn-more-hover').css('color','#ffffff');
-        $('._info-img-hover').removeClass('info-img-hover');
+        $('.info-image-layout1').removeClass('info-img-hover');
     }
 
-    $('._info-img-hover').hover(()=>{
+    $('.info-image-layout1').hover(()=>{
         infoHover();
     },()=>{
         infoHoverOut();
