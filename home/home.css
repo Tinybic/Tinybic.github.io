@@ -394,12 +394,19 @@ html.fp-enabled,
 .news-section .news-item:hover .news-date{
     color: var(--link-hover);
 }
-
 /*news section style ends*/
 
+
+/*info-section style starts*/
 .info-section .collaborator a{
     color: #fff;
 }
+.info-section .collaborator .w-embed:before,
+.info-section .collaborator .w-embed:after{
+    content: none;
+}
+/*info-section style ends*/
+
 
 /*media query starts*/
 @media screen and (min-width: 1921px) {
