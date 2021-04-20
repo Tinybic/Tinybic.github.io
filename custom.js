@@ -51,6 +51,10 @@ $(document).ready(function () {
     $('.sidebar-space').click(function (e) {
         closeSide();
     })
+    $('#infoImage').hover(()=>{
+        $('#infoTitle').css('color','#c6e6ff');
+        $('#infoLearnMore').css('color','#c6e6ff');
+    })
 
     const myGallerySwiper = new Swiper('.gallery-swiper-container', {
         // Optional parameters
