@@ -465,6 +465,13 @@ html.fp-enabled,
     }
 }
 
+@media screen and (max-width: 1023px) {
+    .footer-text,.footer-link{
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .swiper-pagination-bullet {
         width: 10px !important;
