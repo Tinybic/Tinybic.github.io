@@ -56,12 +56,14 @@ $(document).ready(function () {
     function infoHover(){
         $('.info-title-hover').css('color','#c6e6ff');
         $('.info-learn-more-hover').css('color','#c6e6ff');
+        $('.info-learn-text-sml').css('color','#c6e6ff');
         $('.info-image-layout1').addClass('info-img-hover');
     }
 
     function infoHoverOut(){
         $('.info-title-hover').css('color','#ffffff');
         $('.info-learn-more-hover').css('color','#ffffff');
+        $('.info-learn-text-sml').css('color','#ffffff');
         $('.info-image-layout1').removeClass('info-img-hover');
     }
 
