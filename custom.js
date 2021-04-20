@@ -54,30 +54,30 @@ $(document).ready(function () {
 
 
     function infoHover(){
-        $('#infoTitle').css('color','#c6e6ff');
-        $('#infoLearnMore').css('color','#c6e6ff');
-        $('#infoImage').addClass('info-img-hover');
+        $('.info-title-hover').css('color','#c6e6ff');
+        $('.info-learn-more-hover').css('color','#c6e6ff');
+        $('._info-img-hover').addClass('info-img-hover');
     }
 
     function infoHoverOut(){
-        $('#infoTitle').css('color','#ffffff');
-        $('#infoLearnMore').css('color','#ffffff');
-        $('#infoImage').removeClass('info-img-hover');
+        $('.info-title-hover').css('color','#ffffff');
+        $('.info-learn-more-hover').css('color','#ffffff');
+        $('._info-img-hover').removeClass('info-img-hover');
     }
 
-    $('#infoImage').hover(()=>{
+    $('._info-img-hover').hover(()=>{
         infoHover();
     },()=>{
         infoHoverOut();
     })
 
-    $('#infoTitle').hover(()=>{
+    $('.info-title-hover').hover(()=>{
         infoHover();
     },()=>{
         infoHoverOut();
     })
 
-    $('#infoLearnMore').hover(()=>{
+    $('.info-learn-more-hover').hover(()=>{
         infoHover();
     },()=>{
         infoHoverOut();
