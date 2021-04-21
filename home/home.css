@@ -473,6 +473,11 @@ html.fp-enabled,
 }
 
 @media screen and (max-width: 991px) {
+    .learn-more-svg{
+        width: 20px;
+        height: 16px;
+    }
+
     .swiper-pagination-bullet {
         width: 10px !important;
         height: 10px !important;
