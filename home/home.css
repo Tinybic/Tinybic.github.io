@@ -330,6 +330,13 @@ html.fp-enabled,
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60764f576f4a2ff8af71b9db_arrow-right.png), auto;
 }
 
+.w-richtext:before,
+.w-richtext:after,
+.w-embed:before,
+.w-embed:after{
+    content: none;
+}
+
 .menu-active .menu-line:nth-of-type(1),
 .menu-active .menu-line:nth-of-type(4)
 {
