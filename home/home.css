@@ -473,7 +473,7 @@ html.fp-enabled,
 }
 
 @media screen and (max-width: 991px) {
-    .learn-more-svg{
+    .learn-more-arrow{
         width: 20px;
         height: 16px;
     }
