@@ -529,5 +529,11 @@ html.fp-enabled,
         width: 100% !important;
         margin: 0;
     }
+    .footer-text,
+    .footer-link,
+    .footer-section .paragraph{
+        font-size: 0.9375rem;
+        line-height: 0.9375rem;
+    }
 }
 /*media query ends*/
