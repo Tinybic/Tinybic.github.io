@@ -522,6 +522,9 @@ html.fp-enabled,
 }
 
 @media screen and (max-width: 479px) {
+    html{
+        font-size: 16px;
+    }
     .news-section .news-swiper-container-xs .swiper-slide {
         width: 100% !important;
         margin: 0;
