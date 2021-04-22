@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+    let year = new Date().getFullYear();
+    $(".copyright-year").each(function(e){
+        $(this).text('© '+ year + " Lovett")
+    })
+
     $('#fullpage').fullpage({
         licenseKey: 'YOUR_KEY_HERE',
         scrollBar: true,
