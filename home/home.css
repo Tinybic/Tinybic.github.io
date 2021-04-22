@@ -541,5 +541,11 @@ html.fp-enabled,
         box-sizing: border-box;
         padding: 23px 30px 30px;
     }
+    .sidebar-contain .mail-contain .sidebar-contain .mail-contain{
+        left:auto;
+        right: auto;
+        width: fit-content;
+        width: -moz-fit-content;
+    }
 }
 /*media query ends*/
