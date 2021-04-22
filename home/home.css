@@ -542,10 +542,10 @@ html.fp-enabled,
         padding: 23px 30px 30px;
     }
     .sidebar-contain .mail-contain .email-submit{
-        left:auto;
+        left:50%;
         right: auto;
-        width: fit-content;
-        width: -moz-fit-content;
+        width: auto;
+        transform: translateX(-50%);
     }
 }
 /*media query ends*/
