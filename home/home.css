@@ -541,7 +541,7 @@ html.fp-enabled,
         box-sizing: border-box;
         padding: 23px 30px 30px;
     }
-    .sidebar-contain .mail-contain .sidebar-contain .mail-contain{
+    .sidebar-contain .mail-contain .email-submit{
         left:auto;
         right: auto;
         width: fit-content;
