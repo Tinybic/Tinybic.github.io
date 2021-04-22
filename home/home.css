@@ -535,5 +535,11 @@ html.fp-enabled,
         font-size: 0.9375rem;
         line-height: 0.9375rem;
     }
+    .sidebar-contain .maril-contain{
+        width: calc(100vw - 60px);
+        height: calc(100vw - 60px);
+        box-sizing: border-box;
+        padding: 23px 30px 30px;
+    }
 }
 /*media query ends*/

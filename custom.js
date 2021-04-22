@@ -65,26 +65,22 @@ $(document).ready(function () {
         $('.info-learn-text-sml').css('color','#c6e6ff');
         $('.info-image-layout1').addClass('info-img-hover');
     }
-
     function infoHoverOut(){
         $('.info-title-hover').css('color','#ffffff');
         $('.info-learn-more-hover').css('color','#ffffff');
         $('.info-learn-text-sml').css('color','#ffffff');
         $('.info-image-layout1').removeClass('info-img-hover');
     }
-
     $('.info-image-layout1').hover(()=>{
         infoHover();
     },()=>{
         infoHoverOut();
     })
-
     $('.info-title-hover').hover(()=>{
         infoHover();
     },()=>{
         infoHoverOut();
     })
-
     $('.info-learn-more-hover').hover(()=>{
         infoHover();
     },()=>{
@@ -123,7 +119,6 @@ $(document).ready(function () {
             }
         },
     })
-
     const myNavSwiper = new Swiper('.nav-swiper-container', {
         // Optional parameters
         //spaceBetween: 30,
@@ -146,7 +141,6 @@ $(document).ready(function () {
             enabled: true,
         },
     })
-
     const myNavSwiperSml = new Swiper('.nav-swiper-container-sml', {
         // Optional parameters
         //spaceBetween: 30,
@@ -169,7 +163,6 @@ $(document).ready(function () {
             enabled: true,
         },
     })
-
     const myNewsSwiper = new Swiper('.news-swiper-container', {
         // Optional parameters
         //spaceBetween: 30,
@@ -192,7 +185,6 @@ $(document).ready(function () {
             enabled: true,
         },
     })
-
     const myNewsSwiperSml = new Swiper('.news-swiper-container-sml', {
         // Optional parameters
         //spaceBetween: 30,
@@ -215,7 +207,6 @@ $(document).ready(function () {
             enabled: true,
         },
     })
-
     const myNewsSwiperXs = new Swiper('.news-swiper-container-xs', {
         // Optional parameters
         //spaceBetween: 30,
@@ -238,7 +229,6 @@ $(document).ready(function () {
             enabled: true,
         },
     })
-
     const myInfoSwiper = new Swiper('.infos-swiper-container', {
         // Optional parameters
         //spaceBetween: 30,
