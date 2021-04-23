@@ -447,7 +447,6 @@ html.fp-enabled,
 .news .signup.mt20{
     color: var(--post-blue);
 }
-.news .footer-text:hover,
 .news .footer-link:hover,
 .news .signup.mt20:hover{
     color: var(--link-hover);
