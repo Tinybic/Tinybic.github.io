@@ -456,10 +456,10 @@ html.fp-enabled,
 }
 
 .news-learn-more{
-    color: var(--post-blue);
+    color: var(--post-blue) !important;
 }
 .news-learn-more:hover{
-    color: var(--link-hover-dark);
+    color: var(--link-hover-dark) !important;
 }
 .news-learn-more:hover .learn-text{
     color: var(--link-hover-dark);
