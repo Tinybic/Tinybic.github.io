@@ -465,7 +465,7 @@ html.fp-enabled,
     color: var(--link-hover-dark);
 }
 .news-learn-more:hover .learn-more-svg{
-    color: var(--link-hover-dark);
+    color: var(--link-hover-dark) !important;
 }
 /*news page style ends*/
 
