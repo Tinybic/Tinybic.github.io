@@ -34,10 +34,6 @@ $(document).ready(function () {
     var next_prev_buttons = '<div class="swiper-button-prev"></div><div class="swiper-button-next"></div>';
     swiperNodes = swiperNodes.concat(pagination, next_prev_buttons);
 
-    /* loop throw all swipers on the page */
-    $('.swiper-container').each(function (index) {
-        $(this).append(swiperNodes);
-    });
 
     function closeSide() {
         let menu = $('#menu');
@@ -50,7 +46,6 @@ $(document).ready(function () {
             sidebar.addClass('sidebar-contain-active');
         }
     }
-
     $('#menu').click(function (e) {
         closeSide();
     })
@@ -88,6 +83,23 @@ $(document).ready(function () {
     })
 
 
+
+    $('.signup').each(function(){
+        $(this).click(function (){
+            let mail = $("#subscribe");
+            mail.addClass('sidebar-contain-active');
+        });
+    })
+    $('.close-mail').click(function(){
+        $("#subscribe").removeClass('sidebar-contain-active');
+    })
+
+
+
+    /* loop throw all swipers on the page */
+    $('.swiper-container').each(function (index) {
+        $(this).append(swiperNodes);
+    });
     const myGallerySwiper = new Swiper('.gallery-swiper-container', {
         // Optional parameters
         //spaceBetween: 30,
