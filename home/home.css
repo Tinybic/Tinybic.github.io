@@ -449,7 +449,7 @@ html.fp-enabled,
 }
 .news .footer-link:hover,
 .news .signup.mt20:hover{
-    color: var(--link-hover);
+    color: var(--link-hover-dark);
 }
 .news .signup.mt20{
     border-color: var(--post-blue);
