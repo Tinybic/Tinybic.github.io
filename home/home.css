@@ -454,6 +454,19 @@ html.fp-enabled,
 .news .signup.mt20{
     border-color: var(--post-blue);
 }
+
+.news-learn-more{
+    color: var(--post-blue);
+}
+.news-learn-more:hover{
+    color: var(--link-hover-dark);
+}
+.news-learn-more:hover .learn-text{
+    color: var(--link-hover-dark);
+}
+.news-learn-more:hover .learn-more-svg{
+    color: var(--link-hover-dark);
+}
 /*news page style ends*/
 
 
