@@ -433,6 +433,14 @@ html.fp-enabled,
 .news .menu-line{
     background-color: var(--post-blue);
 }
+.news .footer-border{
+    background-color: var(--post-blue);
+}
+.news .footer-grid-block,
+.news .footer-text,
+.news .footer-link{
+    color: var(--post-blue);
+}
 /*news page style ends*/
 
 
