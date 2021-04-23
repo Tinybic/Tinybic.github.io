@@ -455,7 +455,7 @@ html.fp-enabled,
     border-color: var(--post-blue);
 }
 
-.news-learn-more{
+.news-learn-more,.learn-more-svg{
     color: var(--post-blue) !important;
 }
 .news-learn-more:hover{
