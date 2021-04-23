@@ -5,11 +5,6 @@ $(document).ready(function () {
         $(this).text('© '+ year + " Lovett")
     })
 
-    var swiperNodes = "";
-    var pagination = '<div class=swiper-pagination></div>';
-    var next_prev_buttons = '<div class="swiper-button-prev"></div><div class="swiper-button-next"></div>';
-    swiperNodes = swiperNodes.concat(pagination, next_prev_buttons);
-
     function closeSide() {
         let menu = $('#menu');
         let sidebar = $('#sidebar')
