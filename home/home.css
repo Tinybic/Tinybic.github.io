@@ -443,7 +443,8 @@ html.fp-enabled,
 }
 .news .footer-grid-block,
 .news .footer-text,
-.news .footer-link{
+.news .footer-link,
+.news .footer-section .paragraph{
     color: var(--post-blue);
 }
 .news .signup.mt20{
