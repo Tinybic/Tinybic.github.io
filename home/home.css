@@ -436,7 +436,9 @@ html.fp-enabled,
 .news .footer-border{
     background-color: var(--post-blue);
 }
-.news .grid-lg{
+.news .grid-lg,
+.news .grid-sml,
+.news .grid-xs{
     opacity: 1 !important;
 }
 .news .footer-grid-block,
