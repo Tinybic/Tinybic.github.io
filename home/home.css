@@ -491,7 +491,7 @@ html.fp-enabled,
     right: 0;
     padding-bottom: 66.67%;
 }
-.news .news-list-item:hover>.news-img-contain:before{
+.news .news-list-item:hover .news-img-contain:before{
     background-color: rgba(0, 22, 193, 0.2);
 }
 /*news page style ends*/
