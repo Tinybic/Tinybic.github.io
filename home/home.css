@@ -483,6 +483,17 @@ html.fp-enabled,
 .news-learn-more:hover .learn-more-svg{
     color: var(--link-hover-dark) !important;
 }
+.news .news-list-item .news-img-contain:before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 66.67%;
+}
+.news .news-list-item:hover>.news-img-contain:before{
+    background-color: rgba(0, 22, 193, 0.2);
+}
 /*news page style ends*/
 
 
