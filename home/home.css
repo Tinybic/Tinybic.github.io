@@ -290,6 +290,13 @@ html.fp-enabled,
     height: auto !important;
 }
 
+.news .swiper-container-horizontal>.swiper-pagination-bullets, .news  .swiper-pagination-custom, .news  .swiper-pagination-fraction {
+    bottom: 0;
+    left: auto;
+    width: auto;
+    right: 0;
+}
+
 .swiper-pagination-bullet {
     width: 18px !important;
     height: 18px !important;
@@ -297,9 +304,15 @@ html.fp-enabled,
     opacity: 1 !important;
     border: solid 2px #fff;
 }
+.news .swiper-pagination-bullet {
+    border: solid 2px var(--post-blue);
+}
 
 .swiper-pagination-bullet-active {
     background-color: #fff !important;
+}
+.news .swiper-pagination-bullet-active {
+    background-color: var(--post-blue) !important;
 }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
