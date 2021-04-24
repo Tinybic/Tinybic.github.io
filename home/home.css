@@ -291,7 +291,7 @@ html.fp-enabled,
 }
 
 .news .swiper-container-horizontal>.swiper-pagination-bullets, .news  .swiper-pagination-custom, .news  .swiper-pagination-fraction {
-    bottom: 30;
+    bottom: 30px;
     left: auto;
     width: auto;
     right: 0;
