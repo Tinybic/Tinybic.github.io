@@ -26,9 +26,7 @@ html {
     white-space: pre-wrap;
     height: 5em;
     overflow-y: scroll;
-}
 
-.body {
     /* This is the magic bit for Firefox */
     scrollbar-width: none;
 }
@@ -314,7 +312,9 @@ html.fp-enabled,
     margin-top: 0;
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60764f582c35940f11e9fb18_arrow-left.png), auto;
 }
-
+.news .swiper-button-prev, .news .swiper-container-rtl .swiper-button-next {
+    cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60836e23ae1ca4a1ee520702_arrow-left-blue.png), auto;
+}
 .swiper-button-next:after, .swiper-button-prev:after {
     display: none;
 }
@@ -328,6 +328,9 @@ html.fp-enabled,
     top: 90px;
     margin-top: 0;
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60764f576f4a2ff8af71b9db_arrow-right.png), auto;
+}
+.news .swiper-button-next, .news .swiper-container-rtl .swiper-button-prev {
+    cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60836e23dad40dae03487f9f_arrow-right-blue.png), auto;
 }
 
 .w-richtext:before,
