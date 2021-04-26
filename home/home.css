@@ -420,6 +420,7 @@ html.fp-enabled,
 .news-section .news-item:hover .news-date{
     color: var(--link-hover);
 }
+
 /*news section style ends*/
 
 
@@ -562,7 +563,6 @@ html.fp-enabled,
     }
 
     .news .swiper-pagination-bullet {
-        top: calc(50vw + 15px) !important;
         border-color: var(--post-blue) !important;
     }
 
@@ -576,6 +576,12 @@ html.fp-enabled,
         right: 30px !important;
         left: auto !important;
         width: auto !important;
+        top: calc(50vw + 15px) !important;
+    }
+    .news .swiper-container .swiper-pagination-bullets,
+    .news .gallery-section .swiper-container .swiper-pagination-bullets{
+        bottom: auto !important;
+        top: calc(50vw + 15px) !important;
     }
 
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
