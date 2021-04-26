@@ -581,7 +581,7 @@ html.fp-enabled,
     .news .swiper-container .swiper-pagination-bullets,
     .news .gallery-section .swiper-container .swiper-pagination-bullets{
         bottom: auto !important;
-        top: calc(50vw + 105px) !important;
+        top: calc(70vw + 105px) !important;
         right: 0 !important;
     }
 
