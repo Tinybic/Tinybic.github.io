@@ -472,7 +472,8 @@ html.fp-enabled,
     border-color: var(--post-blue);
 }
 
-.news .news-learn-more,.learn-more-svg{
+.news .news-learn-more,
+.news .learn-more-svg{
     color: var(--post-blue) !important;
 }
 .news .news-learn-more:hover{
