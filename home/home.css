@@ -497,10 +497,10 @@ html.fp-enabled,
     background-color: rgba(0, 22, 193, 0.2);
 }
 .news .news-list-item:hover .news-type{
-    color: var(--post-blue);
+    color: var(--post-blue) !important;
 }
 .news .news-list-item:hover .news-date{
-    color: var(--post-blue);
+    color: var(--post-blue) !important;
 }
 /*news page style ends*/
 
