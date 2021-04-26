@@ -582,6 +582,7 @@ html.fp-enabled,
     .news .gallery-section .swiper-container .swiper-pagination-bullets{
         bottom: auto !important;
         top: calc(50vw + 105px) !important;
+        right: 0 !important;
     }
 
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
