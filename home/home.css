@@ -496,6 +496,12 @@ html.fp-enabled,
 .news .news-list-item:hover .news-img-contain:before{
     background-color: rgba(0, 22, 193, 0.2);
 }
+.news .news-list-item:hover .news-type{
+    color: var(--post-blue);
+}
+.news .news-list-item:hover .news-date{
+    color: var(--post-blue);
+}
 /*news page style ends*/
 
 
