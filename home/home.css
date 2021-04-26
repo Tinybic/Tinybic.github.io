@@ -561,6 +561,11 @@ html.fp-enabled,
         border: solid 1px #fff !important;
     }
 
+    .news .swiper-pagination-bullet {
+        top: calc(50vw + 15px) !important;
+        border-color: var(--post-blue) !important;
+    }
+
     .gallery-section .img-bg {
         height: 70vw;
     }
