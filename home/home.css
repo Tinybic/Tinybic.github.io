@@ -538,8 +538,8 @@ html.fp-enabled,
 
 .news .content .profile span.text {
     margin-bottom: 4rem;
-    font-size: 2rem;
-    line-height: 2rem;
+    /*font-size: 2rem;*/
+    /*line-height: 2rem;*/
     display: block;
 }
 
@@ -552,8 +552,8 @@ html.fp-enabled,
 .news .content .profile a {
     color: var(--post-blue);
     display: inline;
-    font-size: 2rem;
-    line-height: 2rem;
+    /*font-size: 2rem;*/
+    /*line-height: 2rem;*/
     text-decoration: underline;
 }
 
