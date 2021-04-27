@@ -715,6 +715,12 @@ html.fp-enabled,
         width: auto;
         transform: translateX(-50%);
     }
+
+    .post .swiper-container .swiper-pagination-bullets,
+    .post .gallery-section .swiper-container .swiper-pagination-bullets{
+        bottom: 0;
+        right: 30px;
+    }
 }
 
 .col-md-2,
