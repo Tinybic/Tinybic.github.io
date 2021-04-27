@@ -722,7 +722,7 @@ html.fp-enabled,
 .col-xs-6,
 .col-xs-8,
 .col-xs-12 {
-    /*padding: 0 15px*/
+    padding: 0 15px
 }
 
 .col-xs-2 {
@@ -809,7 +809,7 @@ html.fp-enabled,
     .col-xs-6,
     .col-xs-8,
     .col-xs-12 {
-        /*padding: 0 30px*/
+        padding: 0 30px
     }
 
     .col-lg-2 {
