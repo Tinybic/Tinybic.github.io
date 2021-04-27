@@ -536,20 +536,20 @@ html.fp-enabled,
     bottom: 0;
 }
 
-.post .content .profile span.text {
+.news .content .profile span.text {
     margin-bottom: 4rem;
     font-size: 2rem;
     line-height: 2rem;
     display: block;
 }
 
-.post .content .profile span.text {
+.news .content .profile span.text {
     display: block;
     width: 66.666666%;
     padding: 0 30px;
 }
 
-.post .content .profile a {
+.news .content .profile a {
     color: var(--post-blue);
     display: inline;
     font-size: 2rem;
@@ -557,7 +557,7 @@ html.fp-enabled,
     text-decoration: underline;
 }
 
-.news-detail .content .profile img {
+.news .content .profile img {
     margin-bottom: 4rem;
     padding: 0 30px;
     max-height: 1000px;
