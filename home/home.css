@@ -616,6 +616,11 @@ html.fp-enabled,
         width: calc((100% - 60px) / 2) !important;
         margin: 0 15px;
     }
+
+    .news .post .swiper-container-horizontal>.swiper-pagination-bullets,
+    .news .post .swiper-pagination-custom, .news .swiper-pagination-fraction{
+        right: 30px;
+    }
 }
 
 @media screen and (max-width: 479px) {
