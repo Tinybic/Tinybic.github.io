@@ -63,4 +63,5 @@ $(document).ready(function () {
     $('.close-mail').click(function(){
         $("#subscribe").removeClass('sidebar-contain-active');
     })
+
 });

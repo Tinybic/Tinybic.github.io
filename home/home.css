@@ -10,6 +10,9 @@
     --link-hover: #c6e6ff;
     --link-hover-dark: #7dc1ff;
 }
+.bg-trans{
+    background-color:transparent;
+}
 
 html {
     font-size: 16px;
@@ -503,6 +506,14 @@ html.fp-enabled,
     color: var(--post-blue) !important;
 }
 /*news page style ends*/
+
+/*post style starts*/
+.news .post .swiper-container-horizontal>.swiper-pagination-bullets,
+.news .post .swiper-pagination-custom, .news .swiper-pagination-fraction{
+    right: 60px;
+    bottom: 0;
+}
+/*post style ends*/
 
 
 /*media query starts*/
