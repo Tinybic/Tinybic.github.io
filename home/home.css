@@ -614,6 +614,10 @@ html.fp-enabled,
     .swiper-pagination-custom, .swiper-pagination-fraction {
         right: 30px;
     }
+
+    .news .content .profile span.text {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1023px) {
