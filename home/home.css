@@ -546,7 +546,7 @@ html.fp-enabled,
 .news .content .profile span.text {
     display: block;
     width: 66.666666%;
-    padding: 0 30px;
+    padding: 0 15px;
 }
 
 .news .content .profile a {
@@ -559,7 +559,7 @@ html.fp-enabled,
 
 .news .content .profile img {
     margin-bottom: 4rem;
-    padding: 0 30px;
+    padding: 0 15px;
     max-height: 1000px;
 }
 
@@ -580,6 +580,12 @@ html.fp-enabled,
 @media screen and (min-width: 1280px) {
     .nav-section .swiper-slide {
         width: calc(50% - 60px) !important;
+    }
+    .news .content .profile span.text {
+        padding: 0 30px;
+    }
+    .news .content .profile img {
+        padding: 0 30px;
     }
 }
 
