@@ -570,6 +570,54 @@ html.fp-enabled,
 /*post style ends*/
 
 
+
+/*eat style starts*/
+.eat .footer-border {
+    background-color: var(--pink);
+}
+
+.eat .grid-lg,
+.eat .grid-sml,
+.eat .grid-xs {
+    opacity: 1 !important;
+}
+
+.eat .footer-grid-block,
+.eat .footer-text,
+.eat .footer-link,
+.eat .signup.mt20 {
+    color: var(--pink);
+}
+
+.eat .footer-link:hover,
+.eat .signup.mt20:hover {
+    color: var(--pink);
+}
+
+.eat .signup.mt20 {
+    border-color: var(--pink);
+}
+
+.eat .news-learn-more,
+.eat .learn-more-svg {
+    color: var(--pink) !important;
+}
+
+.eat .news-learn-more:hover {
+    color: var(--pink) !important;
+}
+
+.eat .news-learn-more:hover .learn-text {
+    color: var(--pink);
+}
+
+.eat .news-learn-more:hover .learn-more-svg {
+    color: var(--pink) !important;
+}
+
+/*eat style ends*/
+
+
 /*media query starts*/
 @media screen and (min-width: 1921px) {
     .logo {
