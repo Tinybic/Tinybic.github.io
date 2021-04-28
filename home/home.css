@@ -602,8 +602,7 @@ html.fp-enabled,
     border-color: var(--pink);
 }
 
-.eat .news-learn-more,
-.eat .learn-more-svg {
+.eat .learn-more-arrow {
     color: var(--pink) !important;
 }
 
