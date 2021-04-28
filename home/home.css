@@ -662,6 +662,17 @@ html.fp-enabled,
     bottom: 30px;
     top: 0;
 }
+.eat .shop-list-contain .shop-img-contain:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 66.67%;
+}
+.eat .shop-list-contain .shop-item:hover .shop-img-contain:before {
+    background-color: rgba(0, 22, 193, 0.2);
+}
 /*eat style ends*/
 
 
