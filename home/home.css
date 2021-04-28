@@ -622,6 +622,19 @@ html.fp-enabled,
 .eat .sidebar .nav-title{
     color: var(--white);
 }
+.eat .sidebar .nav-title:hover{
+    color: var(--link-hover);
+}
+.eat .eat-logo .logo-text{
+    font-size: 7.5rem;
+    line-height: 6.75rem;
+    color: transparent !important;
+    cursor: pointer;
+    /*-webkit-text-fill-color: var(--white); !* Will override color (regardless of order) *!*/
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--pink);
+    transition: all .1s linear;
+}
 
 /*eat style ends*/
 
