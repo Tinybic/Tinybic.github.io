@@ -591,7 +591,11 @@ html.fp-enabled,
 
 .eat .footer-link:hover,
 .eat .signup.mt20:hover {
-    color: var(--pink);
+    /*color: var(--pink);*/
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--pink);
 }
 
 .eat .signup.mt20 {
@@ -613,6 +617,10 @@ html.fp-enabled,
 
 .eat .news-learn-more:hover .learn-more-svg {
     color: var(--pink) !important;
+}
+.eat .sidebar{background-color: var(--pink)}
+.eat .sidebar .nav-title{
+    color: var(--white);
 }
 
 /*eat style ends*/
