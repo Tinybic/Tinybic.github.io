@@ -333,7 +333,8 @@ html.fp-enabled,
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60764f582c35940f11e9fb18_arrow-left.png), auto;
 }
 
-.news .swiper-button-prev, .news .swiper-container-rtl .swiper-button-next {
+.news .swiper-button-prev,
+.news .swiper-container-rtl .swiper-button-next {
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60836e23ae1ca4a1ee520702_arrow-left-blue.png), auto;
 }
 
@@ -352,7 +353,8 @@ html.fp-enabled,
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60764f576f4a2ff8af71b9db_arrow-right.png), auto;
 }
 
-.news .swiper-button-next, .news .swiper-container-rtl .swiper-button-prev {
+.news .swiper-button-next,
+.news .swiper-container-rtl .swiper-button-prev {
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/60836e23dad40dae03487f9f_arrow-right-blue.png), auto;
 }
 
@@ -648,7 +650,14 @@ html.fp-enabled,
 .eat .swiper-pagination-bullet {
     border: solid 2px var(--pink);
 }
-
+.eat .swiper-button-next,
+.eat .swiper-container-rtl .swiper-button-prev {
+    cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/6088cdb63bb46b4f46413999_arrow-right-eat.png), auto;
+}
+.eat .swiper-button-prev,
+.eat .swiper-container-rtl .swiper-button-next {
+    cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/6088cdb6da4aca447d81b556_arrow-left-eat.png), auto;
+}
 /*eat style ends*/
 
 
