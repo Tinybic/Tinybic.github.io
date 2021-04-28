@@ -653,10 +653,14 @@ html.fp-enabled,
 .eat .swiper-button-next,
 .eat .swiper-container-rtl .swiper-button-prev {
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/6088cdb63bb46b4f46413999_arrow-right-eat.png), auto;
+    bottom: 30px;
+    top: 0;
 }
 .eat .swiper-button-prev,
 .eat .swiper-container-rtl .swiper-button-next {
     cursor: url(https://uploads-ssl.webflow.com/6074635e07fbbbc45f34a580/6088cdb6da4aca447d81b556_arrow-left-eat.png), auto;
+    bottom: 30px;
+    top: 0;
 }
 /*eat style ends*/
 
