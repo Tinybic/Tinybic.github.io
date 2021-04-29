@@ -837,9 +837,17 @@ html.fp-enabled,
         bottom: 0;
         right: 30px;
     }
+    .eat .swiper-container .swiper-pagination-bullets, .eat .gallery-section .swiper-container .swiper-pagination-bullets {
+        top: calc(66.7vw + 15px) !important;
+    }
     .eat .swiper-pagination-bullets {
         top: calc(66.7vw + 20px);
         bottom: unset;
+    }
+    .eat .logo-scroll .logo-text {
+        font-size: 1.875rem !important;
+        line-height: 1.875rem !important;
+        display: block !important;
     }
 }
 
