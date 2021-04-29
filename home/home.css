@@ -575,6 +575,34 @@ html.fp-enabled,
 
 
 /*eat style starts*/
+.eat .menu-active .menu-line{
+    background-color:#ffffff;
+}
+.bg-trans{
+    background-color:transparent !important;
+}
+.bg-white{
+    background-color:rgba(255, 255, 255, 0.75) !important;
+}
+.eat .logo-scroll .logo-text{
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+    display: inline-block;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-fill-color: transparent;
+    margin-right:12px
+}
+.eat .img-slide-scroll{
+    padding-top:210px;
+}
+.eat .img-slide{
+    height:var(--vh);
+}
+@media screen and (min-width: 1921px){
+    .eat .img-slide {
+        height: 969px;
+    }
+}
 .eat .footer-border {
     background-color: var(--pink);
 }
