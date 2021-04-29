@@ -747,7 +747,7 @@ html.fp-enabled,
     .swiper-pagination-bullet {
         width: 10px !important;
         height: 10px !important;
-        border: solid 1px #fff !important;
+        border-width: 1px !important;
     }
 
     .news .swiper-pagination-bullet {
