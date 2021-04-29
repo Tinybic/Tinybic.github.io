@@ -837,6 +837,10 @@ html.fp-enabled,
         bottom: 0;
         right: 30px;
     }
+    .eat .swiper-pagination-bullets {
+        top: calc(66.7vw + 20px);
+        bottom: unset;
+    }
 }
 
 .col-md-2,
