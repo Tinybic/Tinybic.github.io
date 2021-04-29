@@ -773,6 +773,13 @@ html.fp-enabled,
         right: 30px !important;
     }
 
+    .eat .swiper-container .swiper-pagination-bullets,
+    .eat .gallery-section .swiper-container .swiper-pagination-bullets {
+        bottom: auto !important;
+        top: calc(50vw + 145px) !important;
+        right: 30px !important;
+    }
+
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
         display: none;
