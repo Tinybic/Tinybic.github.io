@@ -628,8 +628,6 @@ html.fp-enabled,
     color: var(--link-hover);
 }
 .eat .eat-logo .logo-text{
-    font-size: 7.5rem;
-    line-height: 6.75rem;
     color: transparent !important;
     cursor: pointer;
     /*-webkit-text-fill-color: var(--white); !* Will override color (regardless of order) *!*/
