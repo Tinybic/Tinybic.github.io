@@ -65,3 +65,50 @@ $(document).ready(function () {
     })
 
 });
+
+$(document).ready(function () {
+    const Day = {
+        Monday:'Mon',
+        Tuesday:'Tue',
+        Wednesday:'Wed',
+        Thursday:'Thur',
+        Friday:'Fri',
+        Saturday:'Sat',
+        Sunday:'Sun'
+    }
+
+    let list = $('.trading-hour-list-item');
+    let _list = [];
+    let dayList=[];
+
+    list.each(function(i,e){
+        let _day = $(e)[0].firstChild.innerText;
+        console.log($(e));
+        _list.push({
+            day:Day[_day],
+            time:$(e)[0].lastChild.firstChild.innerHTML+'-'+$(e)[0].lastChild.lastChild.innerHTML
+        })
+    })
+
+    tempList.each(function(i,e){
+        if(e.time===tempList[i-1].time){
+            tempDay = tempList[i-1].day.split('-')[0];
+            dayList[i-1].day = tempDay + '-' + e.day;
+        }else{
+            dayList.push(e)
+        }
+    })
+
+    dayList.forEach(function (value, index, array){
+        $('#tradingHour').append(
+            '<div>\n' +
+            '    <span class="day">'+value.day+'</span>\n' +
+            '    <span class="hour-time">\n' + value.time + '</span>\n' +
+            '</div>')
+    })
+
+
+
+    console.log(_list)
+    console.log(Daylist)
+})
