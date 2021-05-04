@@ -872,11 +872,6 @@ html.fp-enabled,
 
     .news-detail .post .swiper-container .swiper-pagination-bullets,
     .news-detail .post .gallery-section .swiper-container .swiper-pagination-bullets{
-        bottom: 0;
-        right: 30px;
-    }
-    .news .swiper-container .swiper-pagination-bullets,
-    .news .gallery-section .swiper-container .swiper-pagination-bullets {
         bottom: 0 !important;
         right: 30px !important;
     }
