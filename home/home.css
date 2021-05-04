@@ -877,6 +877,9 @@ html.fp-enabled,
         line-height: 1.875rem !important;
         display: block !important;
     }
+    .eat .eat-logo .logo-text{
+        -webkit-text-stroke-width: 1.5px;
+    }
 }
 
 .col-md-2,
