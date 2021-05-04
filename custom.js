@@ -69,6 +69,7 @@ $(document).ready(function () {
     })
 
     window.addEventListener("resize", function () {
+        console.log('resize');
         wWidth = window.innerWidth;
         let vh = window.innerHeight;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
