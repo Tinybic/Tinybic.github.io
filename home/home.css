@@ -894,6 +894,10 @@ html.fp-enabled,
     .eat .eat-logo .logo-text{
         -webkit-text-stroke-width: 1.5px;
     }
+    .news .footer-contain,
+    .eat .footer-contain{
+        margin-top: 90px;
+    }
 }
 
 .col-md-2,
