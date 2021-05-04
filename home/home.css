@@ -570,7 +570,14 @@ html.fp-enabled,
     max-height: 1000px;
 }
 
-/*post style ends*/
+/*news-detail style ends*/
+
+
+/*info-detail style starts*/
+.info-detail .content .profile img {
+    padding: 0;
+}
+/*info-detail style ends*/
 
 
 
@@ -800,8 +807,8 @@ html.fp-enabled,
     .news .swiper-container .swiper-pagination-bullets,
     .news .gallery-section .swiper-container .swiper-pagination-bullets {
         bottom: auto !important;
-        top: calc(70vw + 145px) !important;
-        right: 30px !important;
+        top: calc(56vw - 30px) !important;
+        right: 0 !important;
     }
 
     .eat .swiper-container .swiper-pagination-bullets,
