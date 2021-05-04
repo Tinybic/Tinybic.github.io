@@ -1,3 +1,5 @@
+let wWidth = window.innerWidth;
+
 $(document).ready(function () {
 
     let year = new Date().getFullYear();
@@ -63,5 +65,11 @@ $(document).ready(function () {
     $('.close-mail').click(function(){
         $("#subscribe").removeClass('sidebar-contain-active');
     })
+
+    window.addEventListener("resize", function(){
+        wWidth = window.innerWidth;
+        let vh = window.innerHeight;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
 
 });
