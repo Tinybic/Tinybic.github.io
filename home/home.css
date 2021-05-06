@@ -40,6 +40,12 @@ html {
     display: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+    background-color: #ffffff !important;
+}
+
 /*!
  * fullPage 2.9.7
  * https://github.com/alvarotrigo/fullPage.js
