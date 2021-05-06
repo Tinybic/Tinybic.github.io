@@ -43,7 +43,7 @@ html {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus{
-    background-color: #ffffff !important;
+    background-color: transparent !important;
 }
 
 /*!
