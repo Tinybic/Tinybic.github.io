@@ -880,6 +880,7 @@ html.fp-enabled,
     .news .swiper-container .swiper-pagination-bullets,
     .news .gallery-section .swiper-container .swiper-pagination-bullets {
         top: calc(70vw + 100px) !important;
+        right: 30px !important;
     }
 
     .news-detail .post .swiper-container .swiper-pagination-bullets,
