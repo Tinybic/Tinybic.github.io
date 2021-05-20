@@ -738,15 +738,17 @@ html.fp-enabled,
     .news-section .swiper-slide {
         width: calc((100% - 180px) / 3) !important;
     }
-}
 
-@media screen and (min-width: 1280px) {
     .news .content .profile span.text {
         padding: 0 30px;
     }
     .news .content .profile img {
         padding: 0 30px;
     }
+}
+
+@media screen and (min-width: 1280px) {
+
 }
 
 @media screen and (max-width: 1279px) {
