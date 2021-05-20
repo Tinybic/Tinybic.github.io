@@ -430,14 +430,14 @@ html.fp-enabled,
 
 
 /*news section style starts*/
-.news-section .swiper-slide {
-    width: calc((100% - 180px) / 3) !important;
-}
-
 .news-section .news-item:hover .news-type,
 .news-section .news-item:hover .news-title,
 .news-section .news-item:hover .news-date {
     color: var(--link-hover);
+}
+
+.news-section .swiper-slide {
+    width: calc((100% - 90px) / 3) !important;
 }
 
 /*news section style ends*/
@@ -730,10 +730,17 @@ html.fp-enabled,
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px){
     .nav-section .swiper-slide {
         width: calc(50% - 60px) !important;
     }
+
+    .news-section .swiper-slide {
+        width: calc((100% - 180px) / 3) !important;
+    }
+}
+
+@media screen and (min-width: 1280px) {
     .news .content .profile span.text {
         padding: 0 30px;
     }
@@ -755,10 +762,6 @@ html.fp-enabled,
     .menu-active .menu-line:nth-of-type(3) {
         transform: translate3d(-2px, 0.5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
-    }
-
-    .news-section .swiper-slide {
-        width: calc((100% - 90px) / 3) !important;
     }
 
     .nav-section .swiper-container-horizontal > .swiper-pagination-bullets,
