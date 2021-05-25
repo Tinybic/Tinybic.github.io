@@ -822,7 +822,7 @@ html.fp-enabled,
     .eat .swiper-container .swiper-pagination-bullets,
     .eat .gallery-section .swiper-container .swiper-pagination-bullets {
         bottom: auto !important;
-        top: calc(50vw + 15px) !important;
+        top: calc(70vw + 15px) !important;
         right: 30px !important;
     }
 
