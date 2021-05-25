@@ -16,7 +16,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .body {
@@ -752,10 +752,6 @@ html.fp-enabled,
 }
 
 @media screen and (max-width: 1279px) {
-    html {
-        font-size: 12px;
-    }
-
     .menu-active .menu-line:nth-of-type(2) {
         transform: translate3d(0px, 9px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
@@ -851,10 +847,13 @@ html.fp-enabled,
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 601px) {
     html {
         font-size: 16px;
     }
+}
+
+@media screen and (max-width: 479px) {
 
     .news-section .news-swiper-container-xs .swiper-slide {
         width: 100% !important;
