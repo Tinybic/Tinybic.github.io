@@ -17,6 +17,8 @@ $(document).ready(function () {
 
             $(".page-overlay-copy").css('display', 'none');
             $('body').css('overflow', 'auto');
+            $("#menu").css('transform',`translateX(0)`);
+
 
         } else {
             menu.addClass('menu-active');
