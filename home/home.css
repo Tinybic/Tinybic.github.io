@@ -378,12 +378,12 @@ html.fp-enabled,
 }
 
 .menu-active .menu-line:nth-of-type(2) {
-    transform: translate3d(0px, 11px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+    transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
 
 .menu-active .menu-line:nth-of-type(3) {
-    transform: translate3d(-4px, 0.5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+    transform: translate3d(0px,-4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
 
