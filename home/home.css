@@ -306,7 +306,7 @@ html.fp-enabled,
     bottom: 30px;
     left: auto;
     width: auto;
-    right: 0;
+    right: 30px;
 }
 
 .swiper-pagination-bullet {
@@ -738,7 +738,10 @@ html.fp-enabled,
     .news-section .swiper-slide {
         width: calc((100% - 180px) / 3) !important;
     }
-
+    .news .swiper-container-horizontal > .swiper-pagination-bullets,
+    .news .swiper-pagination-custom, .news .swiper-pagination-fraction {
+        right: 60px;
+    }
     .news .content .profile span.text {
         padding: 0 30px;
     }
