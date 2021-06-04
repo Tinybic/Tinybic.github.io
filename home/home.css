@@ -822,6 +822,12 @@ html.fp-enabled,
         right: 30px !important;
     }
 
+    .news-detail .post .swiper-container .swiper-pagination-bullets,
+    .news-detail .post .gallery-section .swiper-container .swiper-pagination-bullets {
+        bottom: 0 !important;
+        top: auto !important;
+    }
+
     .eat .swiper-container .swiper-pagination-bullets,
     .eat .gallery-section .swiper-container .swiper-pagination-bullets {
         bottom: auto !important;
