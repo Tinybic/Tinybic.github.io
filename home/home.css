@@ -542,7 +542,7 @@ html.fp-enabled,
 /*news-detail style starts*/
 .news-detail .post .swiper-container-horizontal > .swiper-pagination-bullets,
 .news-detail .post .swiper-pagination-custom, .news .swiper-pagination-fraction {
-    right: 60px;
+    right: 0;
     bottom: 0;
 }
 
