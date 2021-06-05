@@ -16,7 +16,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .body {
@@ -306,7 +306,7 @@ html.fp-enabled,
     bottom: 30px;
     left: auto;
     width: auto;
-    right: 0;
+    right: 30px;
 }
 
 .swiper-pagination-bullet {
@@ -378,12 +378,12 @@ html.fp-enabled,
 }
 
 .menu-active .menu-line:nth-of-type(2) {
-    transform: translate3d(0px, 11px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+    transform: translate3d(0px, 5.5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
 
 .menu-active .menu-line:nth-of-type(3) {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+    transform: translate3d(0px,-5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
 
@@ -430,14 +430,14 @@ html.fp-enabled,
 
 
 /*news section style starts*/
-.news-section .swiper-slide {
-    width: calc((100% - 180px) / 3) !important;
-}
-
 .news-section .news-item:hover .news-type,
 .news-section .news-item:hover .news-title,
 .news-section .news-item:hover .news-date {
     color: var(--link-hover);
+}
+
+.news-section .swiper-slide {
+    width: calc((100% - 90px) / 3) !important;
 }
 
 /*news section style ends*/
@@ -525,15 +525,18 @@ html.fp-enabled,
     padding-bottom: 66.67%;
 }
 
-.news .news-list-item:hover .news-img-contain:before {
+.news .news-list-item .internal-news:hover .news-img-contain:before,
+.news .news-list-item .external-news:hover .news-img-contain:before{
     background-color: rgba(0, 22, 193, 0.2);
 }
 
-.news .news-list-item:hover .news-type {
+.news .news-list-item .internal-news:hover .news-type,
+.news .news-list-item .external-news:hover .news-type{
     color: var(--post-blue) !important;
 }
 
-.news .news-list-item:hover .news-date {
+.news .news-list-item .internal-news:hover .news-date,
+.news .news-list-item .external-news:hover .news-date{
     color: var(--post-blue) !important;
 }
 
@@ -542,7 +545,7 @@ html.fp-enabled,
 /*news-detail style starts*/
 .news-detail .post .swiper-container-horizontal > .swiper-pagination-bullets,
 .news-detail .post .swiper-pagination-custom, .news .swiper-pagination-fraction {
-    right: 60px;
+    right: 0;
     bottom: 0;
 }
 
@@ -730,9 +733,17 @@ html.fp-enabled,
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px){
     .nav-section .swiper-slide {
         width: calc(50% - 60px) !important;
+    }
+
+    .news-section .swiper-slide {
+        width: calc((100% - 180px) / 3) !important;
+    }
+    .news .swiper-container-horizontal > .swiper-pagination-bullets,
+    .news .swiper-pagination-custom, .news .swiper-pagination-fraction {
+        right: 60px;
     }
     .news .content .profile span.text {
         padding: 0 30px;
@@ -742,23 +753,19 @@ html.fp-enabled,
     }
 }
 
-@media screen and (max-width: 1279px) {
-    html {
-        font-size: 12px;
-    }
+@media screen and (min-width: 1280px) {
 
+}
+
+@media screen and (max-width: 1279px) {
     .menu-active .menu-line:nth-of-type(2) {
-        transform: translate3d(0px, 9px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+        transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
     }
 
     .menu-active .menu-line:nth-of-type(3) {
-        transform: translate3d(-2px, 0.5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+        transform: translate3d(0px, -4.5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
-    }
-
-    .news-section .swiper-slide {
-        width: calc((100% - 90px) / 3) !important;
     }
 
     .nav-section .swiper-container-horizontal > .swiper-pagination-bullets,
@@ -814,14 +821,20 @@ html.fp-enabled,
     .news .swiper-container .swiper-pagination-bullets,
     .news .gallery-section .swiper-container .swiper-pagination-bullets {
         bottom: auto !important;
-        top: calc(56vw - 24px) !important;
-        right: 0 !important;
+        top: calc(70vw + 96px) !important;
+        right: 30px !important;
+    }
+
+    .news-detail .post .swiper-container .swiper-pagination-bullets,
+    .news-detail .post .gallery-section .swiper-container .swiper-pagination-bullets {
+        bottom: 0 !important;
+        top: auto !important;
     }
 
     .eat .swiper-container .swiper-pagination-bullets,
     .eat .gallery-section .swiper-container .swiper-pagination-bullets {
         bottom: auto !important;
-        top: calc(50vw + 15px) !important;
+        top: calc(70vw + 15px) !important;
         right: 30px !important;
     }
 
@@ -844,11 +857,33 @@ html.fp-enabled,
     .news .post .swiper-pagination-custom, .news .swiper-pagination-fraction {
         right: 30px;
     }
+
+    .out-link-arrow {
+        width: 15px;
+        height: 15px;
+    }
+
+    .play-btn{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    html {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 479px) {
-    html {
-        font-size: 16px;
+    .menu-active .menu-line:nth-of-type(2) {
+        transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+    }
+
+    .menu-active .menu-line:nth-of-type(3) {
+        transform: translate3d(0px, -4.5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
     }
 
     .news-section .news-swiper-container-xs .swiper-slide {
@@ -859,8 +894,8 @@ html.fp-enabled,
     .footer-text,
     .footer-link,
     .footer-section .paragraph {
-        font-size: 0.9375rem;
-        line-height: 0.9375rem;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
     }
 
     .sidebar-contain .mail-contain {
@@ -885,7 +920,7 @@ html.fp-enabled,
 
     .news-detail .post .swiper-container .swiper-pagination-bullets,
     .news-detail .post .gallery-section .swiper-container .swiper-pagination-bullets{
-        bottom: 0 !important;
+        bottom: 10px !important;
         right: 30px !important;
         top: auto !important;
     }
@@ -900,8 +935,9 @@ html.fp-enabled,
     }
 
     .eat .logo-scroll .logo-text {
-        font-size: 1.875rem !important;
-        line-height: 1.875rem !important;
+
+        font-size: 2.5rem !important;
+        line-height: 2.5rem !important;
         display: block !important;
     }
     .eat .eat-logo .logo-text{
@@ -952,6 +988,31 @@ html.fp-enabled,
     width: 100%
 }
 
+@media only screen and (min-width: 1440px) {
+    .col-lg-4,
+    .col-lg-6,
+    .col-lg-8,
+    .col-lg-12,
+    .col-md-2,
+    .col-md-4,
+    .col-md-6,
+    .col-md-8,
+    .col-md-12 .col-lg-2,
+    .col-sm-2,
+    .col-sm-4,
+    .col-sm-6,
+    .col-sm-8,
+    .col-sm-12,
+    .col-xs-2,
+    .col-xs-4,
+    .col-xs-6,
+    .col-xs-8,
+    .col-xs-12 {
+        padding: 0 30px
+    }
+
+}
+
 @media only screen and (min-width: 600px) {
     .col-sm-2 {
         width: 16.666666%
@@ -997,27 +1058,27 @@ html.fp-enabled,
 }
 
 @media only screen and (min-width: 1281px) {
-    .col-lg-4,
-    .col-lg-6,
-    .col-lg-8,
-    .col-lg-12,
-    .col-md-2,
-    .col-md-4,
-    .col-md-6,
-    .col-md-8,
-    .col-md-12 .col-lg-2,
-    .col-sm-2,
-    .col-sm-4,
-    .col-sm-6,
-    .col-sm-8,
-    .col-sm-12,
-    .col-xs-2,
-    .col-xs-4,
-    .col-xs-6,
-    .col-xs-8,
-    .col-xs-12 {
-        padding: 0 30px
-    }
+    /*.col-lg-4,*/
+    /*.col-lg-6,*/
+    /*.col-lg-8,*/
+    /*.col-lg-12,*/
+    /*.col-md-2,*/
+    /*.col-md-4,*/
+    /*.col-md-6,*/
+    /*.col-md-8,*/
+    /*.col-md-12 .col-lg-2,*/
+    /*.col-sm-2,*/
+    /*.col-sm-4,*/
+    /*.col-sm-6,*/
+    /*.col-sm-8,*/
+    /*.col-sm-12,*/
+    /*.col-xs-2,*/
+    /*.col-xs-4,*/
+    /*.col-xs-6,*/
+    /*.col-xs-8,*/
+    /*.col-xs-12 {*/
+    /*    padding: 0 30px*/
+    /*}*/
 
     .col-lg-2 {
         width: 16.666666%

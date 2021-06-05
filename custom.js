@@ -13,6 +13,13 @@ $(document).ready(function () {
         if (menu.hasClass('menu-active')) {
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
+
+
+            $(".page-overlay-copy").css('display', 'none');
+            $('body').css('overflow', 'auto');
+            $("#menu").css('transform',`translateX(0)`);
+
+
         } else {
             menu.addClass('menu-active');
             sidebar.addClass('sidebar-contain-active');
@@ -69,7 +76,6 @@ $(document).ready(function () {
     })
 
     window.addEventListener("resize", function () {
-        console.log('resize');
         wWidth = window.innerWidth;
         let vh = window.innerHeight;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
