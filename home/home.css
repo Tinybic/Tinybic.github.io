@@ -713,7 +713,7 @@ html.fp-enabled,
     right: 0;
     padding-bottom: 66.67%;
 }
-.eat .shop-list-contain .shop-item:hover .shop-img-contain:before {
+.eat .shop-list-contain .shop-item .shop-item-link:hover .shop-img-contain:before {
     background-color: rgba(245, 69, 68, 0.2);
 }
 .eat .mail-contain{
