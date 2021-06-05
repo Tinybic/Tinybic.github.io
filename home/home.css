@@ -685,7 +685,7 @@ html.fp-enabled,
     bottom: 0;
     left: auto;
     width: auto;
-    right: 0;
+    right: 60px;
 }
 .eat .swiper-pagination-bullet-active{
     background-color: var(--pink) !important;
@@ -762,6 +762,10 @@ html.fp-enabled,
     .news-section .swiper-container-horizontal > .swiper-pagination-bullets,
     .info-section .swiper-container-horizontal > .swiper-pagination-bullets,
     .swiper-pagination-custom, .swiper-pagination-fraction {
+        right: 30px;
+    }
+    .eat .swiper-container-horizontal > .swiper-pagination-bullets,
+    .eat .swiper-pagination-custom, .news .swiper-pagination-fraction {
         right: 30px;
     }
 }
