@@ -1138,7 +1138,7 @@ html.fp-enabled,
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
     .home .logo,
-    .hoem .menu{
+    .home .menu{
         top: calc(var(--vh) * 0.015);
     }
 
