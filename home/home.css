@@ -1137,14 +1137,21 @@ html.fp-enabled,
 }
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
-    .home .logo,
-    .home .menu{
-        top: calc(var(--vh) * 0.015);
+    .sidebar-space{
+        display:none;
     }
 
-    .home .logo-img,
-    .home .logo-img-hover {
-        height: 35px;
+    .sidebar{
+        width:100%;
+        max-width:none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nav-title {
+        font-size: 1.875rem;
+        line-height: 1.875rem;
     }
 }
 
