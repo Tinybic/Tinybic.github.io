@@ -1101,4 +1101,11 @@ html.fp-enabled,
     }
 }
 
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+.home .logo-img,
+.home .logo-img-hover{
+    height: 35px;
+}
+}
+
 /*media query ends*/
