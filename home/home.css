@@ -685,7 +685,7 @@ html.fp-enabled,
     bottom: 0;
     left: auto;
     width: auto;
-    right: 0;
+    right: 60px;
 }
 .eat .swiper-pagination-bullet-active{
     background-color: var(--pink) !important;
@@ -713,7 +713,7 @@ html.fp-enabled,
     right: 0;
     padding-bottom: 66.67%;
 }
-.eat .shop-list-contain .shop-item:hover .shop-img-contain:before {
+.eat .shop-list-contain .shop-item .shop-item-link:hover .shop-img-contain:before {
     background-color: rgba(245, 69, 68, 0.2);
 }
 .eat .mail-contain{
@@ -757,6 +757,19 @@ html.fp-enabled,
 
 }
 
+@media screen and (max-width: 1439px) {
+    .nav-section .swiper-container-horizontal > .swiper-pagination-bullets,
+    .news-section .swiper-container-horizontal > .swiper-pagination-bullets,
+    .info-section .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom, .swiper-pagination-fraction {
+        right: 30px;
+    }
+    .eat .swiper-container-horizontal > .swiper-pagination-bullets,
+    .eat .swiper-pagination-custom, .news .swiper-pagination-fraction {
+        right: 30px;
+    }
+}
+
 @media screen and (max-width: 1279px) {
     .menu-active .menu-line:nth-of-type(2) {
         transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
@@ -768,17 +781,14 @@ html.fp-enabled,
         transform-style: preserve-3d;
     }
 
-    .nav-section .swiper-container-horizontal > .swiper-pagination-bullets,
-    .news-section .swiper-container-horizontal > .swiper-pagination-bullets,
-    .info-section .swiper-container-horizontal > .swiper-pagination-bullets,
-    .swiper-pagination-custom, .swiper-pagination-fraction {
-        right: 30px;
-    }
+
 
     .news .content .profile span.text {
         width: 100%;
     }
 }
+
+
 
 @media screen and (max-width: 1023px) {
     .footer-text,
