@@ -1160,6 +1160,12 @@ html.fp-enabled,
         font-size: 1.875rem;
         line-height: 1.875rem;
     }
+    .footer-contain,
+    .paragraph-sm,
+    .footer-text, .footer-link, .footer-section .paragraph {
+        font-size: 0.9375rem;
+        line-height: 0.9375rem;
+    }
 }
 
 /*media query ends*/
