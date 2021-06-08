@@ -1136,7 +1136,11 @@ html.fp-enabled,
     }
 }
 
-@media screen and (max-width: 1023px) and (orientation: landscape) {
+.sidebar{
+    height: fit-content;
+}
+
+@media screen and (min-aspect-ratio: 11/5), screen and (max-width: 1280px) and (min-aspect-ratio: 9/5) {
     .sidebar-space{
         display:none;
     }
@@ -1147,8 +1151,11 @@ html.fp-enabled,
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        height: auto;
     }
+}
 
+@media screen and (max-width: 1280px) and (min-aspect-ratio: 9/5) {
     .nav-title {
         font-size: 1.875rem;
         line-height: 1.875rem;
