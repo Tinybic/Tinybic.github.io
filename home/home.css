@@ -1136,18 +1136,18 @@ html.fp-enabled,
     }
 }
 
-.sidebar{
+.sidebar {
     height: fit-content;
 }
 
 @media screen and (min-aspect-ratio: 11/5), screen and (max-width: 1280px) and (min-aspect-ratio: 9/5) {
-    .sidebar-space{
-        display:none;
+    .sidebar-space {
+        display: none;
     }
 
-    .sidebar{
-        width:100%;
-        max-width:none;
+    .sidebar {
+        width: 100%;
+        max-width: none;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -1160,6 +1160,7 @@ html.fp-enabled,
         font-size: 1.875rem;
         line-height: 1.875rem;
     }
+
     .footer-contain,
     .paragraph-sm,
     .footer-text, .footer-link, .footer-section .paragraph {
