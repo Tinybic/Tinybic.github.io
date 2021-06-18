@@ -1407,6 +1407,11 @@ html.fp-enabled,
         flex-wrap: wrap;
         height: auto;
     }
+
+    .nav-title {
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+    }
 }
 
 /*media query ends*/
