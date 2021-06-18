@@ -1169,12 +1169,13 @@ html.fp-enabled,
     }
 }
 
-@media screen and (max-width: 1280px) and (orientation: landscape)  {
+@media screen and (max-width: 1280px) and (orientation: landscape) {
     .swiper-pagination-bullet {
         width: 10px !important;
         height: 10px !important;
         border: solid 1px #fff;
     }
+
     .home .logo,
     .home .menu {
         top: calc(var(--vh) * 0.015);
@@ -1183,7 +1184,7 @@ html.fp-enabled,
     .home .logo-img,
     .home .logo-img-hover {
         height: 35px;
-        width:auto;
+        width: auto;
     }
 
     .gallery-section .fp-tableCell,
@@ -1223,23 +1224,25 @@ html.fp-enabled,
         width: auto;
     }
 
-    .swiper-container.nav-swiper-container{
-        display:none;
+    .swiper-container.nav-swiper-container {
+        display: none;
     }
 
     .nav-section .square {
         display: none;
     }
 
-    .swiper-container.nav-swiper-container-sml{
-        display:block;
+    .swiper-container.nav-swiper-container-sml {
+        display: block;
     }
-    .nav-section .swiper-slide{
-        width:100% !important;
-        margin:0;
-        padding-top:0;
-        padding-bottom:0;
+
+    .nav-section .swiper-slide {
+        width: 100% !important;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
+
     .nav-section .square-landscape {
         display: flex;
         justify-content: space-between;
@@ -1345,9 +1348,11 @@ html.fp-enabled,
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    .info-section .info-grid{
-        display:none;
+
+    .info-section .info-grid {
+        display: none;
     }
+
     .info-section .info-item .info-text {
         display: flex;
         padding: 0;
@@ -1364,7 +1369,7 @@ html.fp-enabled,
         width: calc((100vw - 90px) / 2);
         padding: 0;
         height: 100%;
-        display:block;
+        display: block;
     }
 
     .info-section .info-title {
@@ -1382,13 +1387,25 @@ html.fp-enabled,
     }
 
     .swiper-container.gallery-swiper-container,
-    .swiper-container.infos-swiper-container{
-        padding:0;
+    .swiper-container.infos-swiper-container {
+        padding: 0;
     }
 
     .footer .grid-lg,
-    .footer .grid-xs{
+    .footer .grid-xs {
+        display: none !important;
+    }
+    .sidebar-space {
         display: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
     }
 }
 
