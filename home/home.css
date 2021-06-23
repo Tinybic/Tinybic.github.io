@@ -1412,6 +1412,10 @@ html.fp-enabled,
         font-size: 1.875rem;
         line-height: 1.875rem;
     }
+    .mail-contain{
+        width: 350px;
+        height: 350px;
+    }
 }
 
 /*media query ends*/
