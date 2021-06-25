@@ -1167,6 +1167,9 @@ html.fp-enabled,
         font-size: 0.9375rem;
         line-height: 0.9375rem;
     }
+    .footer .grid-sml {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
 }
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
@@ -1417,6 +1420,9 @@ html.fp-enabled,
     .mail-contain {
         width: 350px;
         height: 350px;
+    }
+    .footer .grid-sml {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
     }
 }
 
