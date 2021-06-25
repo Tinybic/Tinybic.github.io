@@ -1167,7 +1167,7 @@ html.fp-enabled,
         font-size: 0.9375rem;
         line-height: 0.9375rem;
     }
-    .footer .grid-sml {
+    .footer-section .grid-sml {
         grid-template-columns: 1fr 1fr 1fr 1fr !important;
     }
 }
@@ -1421,7 +1421,7 @@ html.fp-enabled,
         width: 350px;
         height: 350px;
     }
-    .footer .grid-sml {
+    .footer-section .grid-sml {
         grid-template-columns: 1fr 1fr 1fr 1fr !important;
     }
 }
