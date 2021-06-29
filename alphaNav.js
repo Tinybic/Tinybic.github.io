@@ -261,8 +261,10 @@
             }
             // Get the top offset
             tOffset = $target.offset().top; // - parseInt($target.outerHeight(), 10);
+            console.log(tOffset)
             // Remove .alphanav-current from all headers, then add it to current header
-            $container.find('li').removeClass('alphanav-current');
+            //$container.find('li').removeClass('alphanav-current');
+            $container.find('.shop-item').removeClass('alphanav-current');
             $target.addClass('alphanav-current');
             // If overlay enabled, set the content show it
             if (opts.overlay) {
