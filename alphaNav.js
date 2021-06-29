@@ -243,7 +243,8 @@
                 return false;
             }
 
-            $target = $('li.' + opts.headerClassPrefix + t, $container);
+            $target = $('div.' + opts.headerClassPrefix + t, $container);
+
             console.log($target)
             // abort if $target doesn't exist
             if ($target === undefined || $target.length === 0) {
