@@ -190,6 +190,7 @@
             console.log("Letters: ", $letters);
         }
         top = $container.offset().top;
+        console.log(top);
         // Override height if passed in via options, then set $list to that height
         if (opts.height === false) {
             height = $container.outerHeight() + 'px';
@@ -244,13 +245,13 @@
             // abort if $target doesn't exist
             if ($target === undefined || $target.length === 0) {
                 if (opts.debug) {
-                    //console.log('No target! Returning');
+                    console.log('No target! Returning');
                 }
                 return false;
             }
             if ($target.hasClass('alphanav-current')) {
                 if (opts.debug) {
-                    //console.log("Already at the current letter! Returning");
+                    console.log("Already at the current letter! Returning");
                 }
                 return false;
             }
