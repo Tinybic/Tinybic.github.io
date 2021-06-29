@@ -117,8 +117,8 @@
         $container.addClass('alphanav-list');
         // Create wrapper div, prepend to parent container, then shove the list content into it
         // Append #alphanav-slider to wrapper
-        $slider = $('<ul id="' + opts.id + '" class="alphanav-slider alphanav-component"></ul>').appendTo(
-            $container);
+        //$slider = $('<ul id="' + opts.id + '" class="alphanav-slider alphanav-component"></ul>').appendTo($container);
+        $slider = $('<ul id="' + opts.id + '" class="alphanav-slider alphanav-component"></ul>').appendTo($('side-nav-contain'));
 
         if (opts.listSide.toLowerCase() === 'right') {
             var rightOffset = ($(window).width() - (leftOffset + containerWidth));
