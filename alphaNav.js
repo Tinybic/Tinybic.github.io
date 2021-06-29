@@ -244,6 +244,7 @@
             }
 
             $target = $('li.' + opts.headerClassPrefix + t, $container);
+            console.log($target)
             // abort if $target doesn't exist
             if ($target === undefined || $target.length === 0) {
                 if (opts.debug) {
