@@ -26,7 +26,8 @@ dl, menu, ol, ul {
 .alphanav-list {
   width: 100%;
   display: block;
-  overflow: hidden;
+  overflow: scroll;
+  /*overflow: hidden;*/
   margin: 0;
   padding-left: 0;
   list-style: none; }
