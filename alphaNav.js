@@ -189,7 +189,9 @@
             ).insertAfter($container);
             console.log("Letters: ", $letters);
         }
-        top = $container.offset().top;
+        //top = $container.offset().top;
+        top = 0;
+
         console.log(top);
         // Override height if passed in via options, then set $list to that height
         if (opts.height === false) {
