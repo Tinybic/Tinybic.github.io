@@ -32,8 +32,8 @@ dl, menu, ol, ul {
   list-style: none; }
 
 #alphanav-slider {
-  /*position: fixed;*/
-  position: sticky;
+  position: fixed;
+  /*position: sticky;*/
   top: 0;
   margin: 0;
   padding: 5px 0;
