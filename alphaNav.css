@@ -15,8 +15,8 @@ dl, menu, ol, ul {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   outline: 0;
-  background: #ffffff;
-  color: #333333; }
+  background: transparent;
+  color: #f54544; }
 
 #alphanav-wrapper {
   display: block;
