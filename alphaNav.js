@@ -288,6 +288,7 @@
                 $('#debug-scroll-offset').html(tOffset);
                 $('#debug-current-target').html(t);
             }
+            console.log(Math.floor($slider.offset().top) * -1);
             $target
                 .velocity("stop")
                 .velocity("scroll", {
