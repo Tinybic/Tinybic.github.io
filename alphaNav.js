@@ -143,7 +143,7 @@
                 if (opts.letters[i] === opts.trimReplacement) {
                     continue;
                 }
-                var headerClass = 'li.' + opts.headerClassPrefix + opts.letters[i],
+                var headerClass = 'div.' + opts.headerClassPrefix + opts.letters[i],
                     $header = $container.find(headerClass);
                 if (opts.debug) {
                     console.log('headerClass: "' + headerClass + '", $header: ', $header);
