@@ -289,6 +289,7 @@
                 $('#debug-current-target').html(t);
             }
             console.log(Math.floor($slider.offset().top) * -1);
+
             $target
                 .velocity("stop")
                 .velocity("scroll", {
@@ -305,6 +306,8 @@
                         }
                     }
                 });
+
+            console.log($target.velocity())
 
         });
         // Bind the end/leave/out actions (if needed)
