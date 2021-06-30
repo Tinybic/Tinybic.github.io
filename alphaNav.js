@@ -142,7 +142,7 @@
                 if (opts.letters[i] === opts.trimReplacement) {
                     continue;
                 }
-                var headerClass = 'li.' + opts.headerClassPrefix + opts.letters[i],
+                var headerClass = 'div.' + opts.headerClassPrefix + opts.letters[i],
                     $header = $container.find(headerClass);
                 if (opts.debug) {
                     console.log('headerClass: "' + headerClass + '", $header: ', $header);
@@ -240,24 +240,28 @@
                 return false;
             }
 
-            $target = $('li.' + opts.headerClassPrefix + t, $container);
+            $target = $('div.' + opts.headerClassPrefix + t, $container);
+
+            console.log($target)
             // abort if $target doesn't exist
             if ($target === undefined || $target.length === 0) {
                 if (opts.debug) {
-                    //console.log('No target! Returning');
+                    console.log('No target! Returning');
                 }
                 return false;
             }
             if ($target.hasClass('alphanav-current')) {
                 if (opts.debug) {
-                    //console.log("Already at the current letter! Returning");
+                    console.log("Already at the current letter! Returning");
                 }
                 return false;
             }
             // Get the top offset
             tOffset = $target.offset().top; // - parseInt($target.outerHeight(), 10);
+            console.log(tOffset)
             // Remove .alphanav-current from all headers, then add it to current header
-            $container.find('li').removeClass('alphanav-current');
+            //$container.find('li').removeClass('alphanav-current');
+            $container.find('.shop-item').removeClass('alphanav-current');
             $target.addClass('alphanav-current');
             // If overlay enabled, set the content show it
             if (opts.overlay) {
