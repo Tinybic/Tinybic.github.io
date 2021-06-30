@@ -294,7 +294,7 @@
                 .velocity("stop")
                 .velocity("scroll", {
                     container: $container,
-                    offset: (Math.floor($slider.offset().top) * -1) + 'px',
+                    offset: '1000px',//(Math.floor($slider.offset().top) * -1) + 'px',
                     duration: opts.animationDuration,
                     // Call the onScrollComplete callback function (default: empty fn)
                     complete: function(elements) {
