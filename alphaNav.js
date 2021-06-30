@@ -117,16 +117,15 @@
         $container.addClass('alphanav-list');
         // Create wrapper div, prepend to parent container, then shove the list content into it
         // Append #alphanav-slider to wrapper
-        $slider = $('<ul id="' + opts.id + '" class="alphanav-slider alphanav-component"></ul>').appendTo($container);
-        //$slider = $('<ul id="' + opts.id + '" class="alphanav-slider alphanav-component"></ul>').appendTo($('side-nav-contain'));
+        $slider = $('<ul id="' + opts.id + '" class="alphanav-slider alphanav-component"></ul>').appendTo(
+            $container);
 
         if (opts.listSide.toLowerCase() === 'right') {
             var rightOffset = ($(window).width() - (leftOffset + containerWidth));
             if (opts.debug) {
                 console.log("Setting right edge of slider to " + rightOffset);
             }
-            // $slider.css('right', rightOffset + 'px');
-            $slider.css('right', 0 + 'px');
+            $slider.css('right', rightOffset + 'px');
         } else if (opts.listSide.toLowerCase() === 'left') {
             if (opts.debug) {
                 console.log("Setting left edge of slider to " + leftOffset);
@@ -143,7 +142,7 @@
                 if (opts.letters[i] === opts.trimReplacement) {
                     continue;
                 }
-                var headerClass = 'div.' + opts.headerClassPrefix + opts.letters[i],
+                var headerClass = 'li.' + opts.headerClassPrefix + opts.letters[i],
                     $header = $container.find(headerClass);
                 if (opts.debug) {
                     console.log('headerClass: "' + headerClass + '", $header: ', $header);
@@ -190,10 +189,7 @@
             ).insertAfter($container);
             console.log("Letters: ", $letters);
         }
-        //top = $container.offset().top;
-        top = 0;
-
-        console.log(top);
+        top = $container.offset().top;
         // Override height if passed in via options, then set $list to that height
         if (opts.height === false) {
             height = $container.outerHeight() + 'px';
@@ -244,28 +240,24 @@
                 return false;
             }
 
-            $target = $('div.' + opts.headerClassPrefix + t, $container);
-
-            console.log($target)
+            $target = $('li.' + opts.headerClassPrefix + t, $container);
             // abort if $target doesn't exist
             if ($target === undefined || $target.length === 0) {
                 if (opts.debug) {
-                    console.log('No target! Returning');
+                    //console.log('No target! Returning');
                 }
                 return false;
             }
             if ($target.hasClass('alphanav-current')) {
                 if (opts.debug) {
-                    console.log("Already at the current letter! Returning");
+                    //console.log("Already at the current letter! Returning");
                 }
                 return false;
             }
             // Get the top offset
             tOffset = $target.offset().top; // - parseInt($target.outerHeight(), 10);
-            console.log(tOffset)
             // Remove .alphanav-current from all headers, then add it to current header
-            //$container.find('li').removeClass('alphanav-current');
-            $container.find('.shop-item').removeClass('alphanav-current');
+            $container.find('li').removeClass('alphanav-current');
             $target.addClass('alphanav-current');
             // If overlay enabled, set the content show it
             if (opts.overlay) {
@@ -288,13 +280,12 @@
                 $('#debug-scroll-offset').html(tOffset);
                 $('#debug-current-target').html(t);
             }
-            console.log(Math.floor($slider.offset().top) * -1);
-
+            console.log(Math.floor($slider.offset().top) * -1)
             $target
                 .velocity("stop")
                 .velocity("scroll", {
                     container: $container,
-                    offset: '1000px',//(Math.floor($slider.offset().top) * -1) + 'px',
+                    offset: (Math.floor($slider.offset().top) * -1) + 'px',
                     duration: opts.animationDuration,
                     // Call the onScrollComplete callback function (default: empty fn)
                     complete: function(elements) {
@@ -306,8 +297,6 @@
                         }
                     }
                 });
-
-            console.log($target.velocity())
 
         });
         // Bind the end/leave/out actions (if needed)
