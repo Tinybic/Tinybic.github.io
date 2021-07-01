@@ -288,22 +288,22 @@
                 $('#debug-scroll-offset').html(tOffset);
                 $('#debug-current-target').html(t);
             }
-            $target
-                .velocity("stop")
-                .velocity("scroll", {
-                    container: $container,
-                    offset: (Math.floor($slider.offset().top) * -1) + 'px',
-                    duration: opts.animationDuration,
-                    // Call the onScrollComplete callback function (default: empty fn)
-                    complete: function(elements) {
-                        if (opts.debug) {
-                            console.log("scroll complete! ", elements);
-                        }
-                        if (opts.onScrollComplete !== null) {
-                            opts.onScrollComplete.call(elements);
-                        }
-                    }
-                });
+            // $target
+            //     .velocity("stop")
+            //     .velocity("scroll", {
+            //         container: $container,
+            //         offset: (Math.floor($slider.offset().top) * -1) + 'px',
+            //         duration: opts.animationDuration,
+            //         // Call the onScrollComplete callback function (default: empty fn)
+            //         complete: function(elements) {
+            //             if (opts.debug) {
+            //                 console.log("scroll complete! ", elements);
+            //             }
+            //             if (opts.onScrollComplete !== null) {
+            //                 opts.onScrollComplete.call(elements);
+            //             }
+            //         }
+            //     });
             console.warn($target);
             console.log($target.offset().top);
 
@@ -311,9 +311,9 @@
             //     scrollTop: $target.offset().top - $container.offset().top + $container.scrollTop()
             // },500);
 
-            // $("html,body").stop().animate({
-            //     scrollTop: $target.offset().top
-            // },500);
+            $("html,body").stop().animate({
+                scrollTop: $target.offset().top
+            },500);
 
 
             // $container.stop().animate({
