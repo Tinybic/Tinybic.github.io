@@ -44,12 +44,12 @@ dl, menu, ol, ul {
     padding: 5px 0;
     list-style: none;
     min-height: 250px;
-    width: 30px;
+    width: 60px;
     -webkit-transition: width 250ms ease 0s;
     -moz-transition: width 250ms ease 0s;
     -o-transition: width 250ms ease 0s;
     transition: width 250ms ease 0s;
-    z-index: 10;
+    z-index: 1000;
 }
 
 #alphanav-slider.left {
