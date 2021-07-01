@@ -311,7 +311,12 @@
             //     scrollTop: $target.offset().top - $container.offset().top + $container.scrollTop()
             // },500);
 
-            $("html,body").stop().animate({
+            // $("html,body").stop().animate({
+            //     scrollTop: $target.offset().top
+            // },500);
+
+
+            $container.stop().animate({
                 scrollTop: $target.offset().top
             },500);
         });
