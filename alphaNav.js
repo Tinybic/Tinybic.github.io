@@ -304,7 +304,8 @@
             //             }
             //         }
             //     });
-            console.warn($target)
+            console.warn($target);
+            console.log($target.offset().top);
 
             // $container.stop().animate({
             //     scrollTop: $target.offset().top - $container.offset().top + $container.scrollTop()
