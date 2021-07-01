@@ -125,7 +125,8 @@
             if (opts.debug) {
                 console.log("Setting right edge of slider to " + rightOffset);
             }
-            $slider.css('right', rightOffset + 'px');
+            //$slider.css('right', rightOffset + 'px');
+            $slider.css('right', '0px');
         } else if (opts.listSide.toLowerCase() === 'left') {
             if (opts.debug) {
                 console.log("Setting left edge of slider to " + leftOffset);
@@ -177,7 +178,7 @@
                 overlayTop = centerY - ($overlay.outerHeight() / 2),
                 overlayLeft = centerX - ($overlay.outerWidth() / 2);
             $overlay.css({
-                top: overlayTop + 'px',
+                top: '40vh',//overlayTop + 'px',
                 left: overlayLeft + 'px'
             });
         }
@@ -206,11 +207,18 @@
             console.log("Height being set to: " + height);
             console.log("top being set to: " + top);
         }
+
+
+
+
         // Set #alphanav-slider 'top' & 'height' properties to match the list content
         $slider.css({
             top: top,
             height: height
         });
+
+
+
 
         // Bind the user actions (mouseover, touchmove, etc)
         $letters.on('click touchstart touchmove mousemove', function(evt) {
@@ -241,27 +249,23 @@
             }
 
             $target = $('div.' + opts.headerClassPrefix + t, $container);
-
-            console.log($target)
             // abort if $target doesn't exist
             if ($target === undefined || $target.length === 0) {
                 if (opts.debug) {
-                    console.log('No target! Returning');
+                    //console.log('No target! Returning');
                 }
                 return false;
             }
             if ($target.hasClass('alphanav-current')) {
                 if (opts.debug) {
-                    console.log("Already at the current letter! Returning");
+                    //console.log("Already at the current letter! Returning");
                 }
                 return false;
             }
             // Get the top offset
             tOffset = $target.offset().top; // - parseInt($target.outerHeight(), 10);
-            console.log(tOffset)
             // Remove .alphanav-current from all headers, then add it to current header
-            //$container.find('li').removeClass('alphanav-current');
-            $container.find('.shop-item').removeClass('alphanav-current');
+            $container.find('div').removeClass('alphanav-current');
             $target.addClass('alphanav-current');
             // If overlay enabled, set the content show it
             if (opts.overlay) {
@@ -284,24 +288,31 @@
                 $('#debug-scroll-offset').html(tOffset);
                 $('#debug-current-target').html(t);
             }
-            console.log(Math.floor($slider.offset().top) * -1)
-            $target
-                .velocity("stop")
-                .velocity("scroll", {
-                    container: $container,
-                    offset: (Math.floor($slider.offset().top) * -1) + 'px',
-                    duration: opts.animationDuration,
-                    // Call the onScrollComplete callback function (default: empty fn)
-                    complete: function(elements) {
-                        if (opts.debug) {
-                            console.log("scroll complete! ", elements);
-                        }
-                        if (opts.onScrollComplete !== null) {
-                            opts.onScrollComplete.call(elements);
-                        }
-                    }
-                });
+            // $target
+            //     .velocity("stop")
+            //     .velocity("scroll", {
+            //         container: $container,
+            //         offset: (Math.floor($slider.offset().top) * -1) + 'px',
+            //         duration: opts.animationDuration,
+            //         // Call the onScrollComplete callback function (default: empty fn)
+            //         complete: function(elements) {
+            //             if (opts.debug) {
+            //                 console.log("scroll complete! ", elements);
+            //             }
+            //             if (opts.onScrollComplete !== null) {
+            //                 opts.onScrollComplete.call(elements);
+            //             }
+            //         }
+            //     });
+            console.warn($target)
 
+            // $container.stop().animate({
+            //     scrollTop: $target.offset().top - $container.offset().top + $container.scrollTop()
+            // },500);
+
+            $container.stop().animate({
+                scrollTop: $target.offset().top
+            },500);
         });
         // Bind the end/leave/out actions (if needed)
         if (opts.overlay || opts.growEffect) {
@@ -329,10 +340,10 @@
                 console.log('up/down arrows enabled! Adding HTML + binding click events');
             }
             var $upBtn = $('<div id="alphanav-btn-slide-up" class="alphanav-component alphanav-arrow"></div>')
-                .insertAfter($container),
+                    .insertAfter($container),
                 $downBtn = $(
                     '<div id="alphanav-btn-slide-down" class="alphanav-component alphanav-arrow"></div>')
-                .insertAfter($container);
+                    .insertAfter($container);
             // Bind click to "Up" button
             $upBtn.off('click').on('click', function(evt) {
                 evt.preventDefault();
