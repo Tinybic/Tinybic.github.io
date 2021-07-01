@@ -125,8 +125,8 @@
             if (opts.debug) {
                 console.log("Setting right edge of slider to " + rightOffset);
             }
-            //$slider.css('right', rightOffset + 'px');
-            $slider.css('right', '0px');
+            $slider.css('right', rightOffset + 'px');
+            //$slider.css('right', '0px');
         } else if (opts.listSide.toLowerCase() === 'left') {
             if (opts.debug) {
                 console.log("Setting left edge of slider to " + leftOffset);
