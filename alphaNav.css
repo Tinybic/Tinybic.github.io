@@ -29,14 +29,16 @@ dl, menu, ol, ul {
 .alphanav-list {
     width: 100%;
     display: block;
-    overflow: scroll;
+    /*overflow: scroll;*/
     /*overflow: hidden;*/
     margin: 0;
     padding-left: 0;
     list-style: none;
 }
 
+
 #alphanav-slider {
+    display: none;
     position: fixed;
     /*position: sticky;*/
     top: 0;
@@ -44,7 +46,7 @@ dl, menu, ol, ul {
     padding: 5px 0;
     list-style: none;
     min-height: 250px;
-    width: 60px;
+    width: 30px;
     -webkit-transition: width 250ms ease 0s;
     -moz-transition: width 250ms ease 0s;
     -o-transition: width 250ms ease 0s;
@@ -187,4 +189,12 @@ dl, menu, ol, ul {
     width: 100%;
     top: 0;
     left: 0;
+}
+@media screen and (max-width: 478px){
+    .alphanav-list {
+        overflow-y: scroll;
+    }
+    #alphanav-slider {
+        display: block;
+    }
 }
