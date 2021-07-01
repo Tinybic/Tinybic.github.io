@@ -275,7 +275,7 @@
                     //.velocity("finish")
                     .velocity("fadeIn", {
                         queue: false,
-                        duration: opts.animationDuration
+                        duration: 3000//opts.animationDuration
                     });
             }
             // If growEffect enabled, grow the current touch target
