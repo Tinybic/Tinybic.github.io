@@ -755,7 +755,7 @@ html.fp-enabled,
     }
 
     .home-search{
-        right: calc((100vw - 1800px) / 2 + 60px);
+        right: calc((100vw - 1800px) / 2 + 116px);
     }
 }
 
