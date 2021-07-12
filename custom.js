@@ -29,8 +29,6 @@ $(document).ready(function () {
 
         if(_search.hasClass('search-active')){
             _search.removeClass('search-active')
-        }else{
-            _search.addClass('search-active')
         }
     }
 
