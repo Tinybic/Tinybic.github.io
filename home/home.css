@@ -760,7 +760,7 @@ html.fp-enabled,
 
 
     .search-active{
-        transform: translateX(calc((100vw - 1800px) / 2 + 1760px));
+        transform: translateX(calc(50vw - 2808px));
     }
 }
 
