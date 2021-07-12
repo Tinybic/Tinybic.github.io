@@ -759,7 +759,7 @@ html.fp-enabled,
     }
 
 
-    .searh-active{
+    .search-active{
         left: calc((100vw - 1800px) / 2) !important;
         right: auto !important;
     }
