@@ -10,6 +10,8 @@ $(document).ready(function () {
     function closeSide() {
         let menu = $('#menu');
         let sidebar = $('#sidebar')
+        let _search = $('.home-search')
+
         if (menu.hasClass('menu-active')) {
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
@@ -23,6 +25,12 @@ $(document).ready(function () {
         } else {
             menu.addClass('menu-active');
             sidebar.addClass('sidebar-contain-active');
+        }
+
+        if(_search.hasClass('search-active')){
+            _search.removeClass('search-active')
+        }else{
+            _search.addClass('search-active')
         }
     }
 
