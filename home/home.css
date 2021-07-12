@@ -753,6 +753,10 @@ html.fp-enabled,
     .menu {
         right: calc((100vw - 1800px) / 2);
     }
+
+    .home-search{
+        right: calc((100vw - 1800px) / 2 + 60px);
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1180,7 +1184,8 @@ html.fp-enabled,
     }
 
     .home .logo,
-    .home .menu {
+    .home .menu,
+    .home .home-search{
         top: calc(var(--vh) * 0.015);
     }
 
