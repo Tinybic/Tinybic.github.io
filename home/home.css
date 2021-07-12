@@ -758,6 +758,7 @@ html.fp-enabled,
         right: calc((100vw - 1800px) / 2 + 116px);
     }
 
+
     .searh-active{
         left: calc((100vw - 1800px) / 2) !important;
         right: auto !important;
