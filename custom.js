@@ -11,6 +11,7 @@ $(document).ready(function () {
         let menu = $('#menu');
         let sidebar = $('#sidebar')
         let _search = $('.home-search')
+        let _sContainer = $('.search-container')
 
         if (menu.hasClass('menu-active')) {
             menu.removeClass('menu-active');
@@ -29,6 +30,7 @@ $(document).ready(function () {
 
         if(_search.hasClass('search-active')){
             _search.removeClass('search-active')
+            _sContainer.fadeOut('fast')
         }
     }
 
