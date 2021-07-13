@@ -817,9 +817,6 @@ html.fp-enabled,
     .eat .swiper-pagination-custom, .news .swiper-pagination-fraction {
         right: 30px;
     }
-    .search-active{
-        transform: translateX(calc(-100vw + 192px));
-    }
 }
 
 @media screen and (max-width: 1279px) {
