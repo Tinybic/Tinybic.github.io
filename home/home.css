@@ -826,6 +826,12 @@ html.fp-enabled,
 }
 
 @media screen and (max-width: 1279px) {
+    input:-webkit-autofill {
+        font-size:24px;
+    }
+    input:autofill {
+        font-size:24px;
+    }
     .menu-active .menu-line:nth-of-type(2) {
         transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
@@ -939,6 +945,13 @@ html.fp-enabled,
 }
 
 @media screen and (max-width: 479px) {
+    input:-webkit-autofill {
+        font-size:18px;
+    }
+    input:autofill {
+        font-size:18px;
+    }
+
     .menu-active .menu-line:nth-of-type(2) {
         transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
