@@ -793,7 +793,13 @@ html.fp-enabled,
     }
 }
 
-@media screen and (min-width: 991px) and (max-width: 1439px){
+@media screen and (min-width: 1280px) and (max-width: 1439px){
+    .search-active{
+        transform: translateX(calc(-100vw + 190px));
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1279px){
     .search-active{
         transform: translateX(calc(-100vw + 180px));
     }
