@@ -17,8 +17,10 @@ $(document).ready(function () {
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
 
+            console.log($('video'))
 
-            $(".page-overlay-copy").css('display', 'none');
+
+            $(".home-covervid-overlay").css('display', 'none');
             $('body').css('overflow', 'auto');
             $("#menu").css('transform', `translateX(0)`);
 
