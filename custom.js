@@ -17,10 +17,11 @@ $(document).ready(function () {
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
 
-            console.log($('#videoDetail').find('video'))
+            console.log($('#videoDetail').find('.vp-video'))
 
 
             $(".home-covervid-overlay").css('display', 'none');
+            $(".page-overlay-copy").css('display','none')
             $('body').css('overflow', 'auto');
             $("#menu").css('transform', `translateX(0)`);
 
