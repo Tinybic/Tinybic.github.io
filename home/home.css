@@ -17,6 +17,8 @@
 
 html {
     font-size: 12px;
+    scrollbar-width: none; /* Firefox 64 */
+    overflow: -moz-scrollbars-none;
 }
 
 .body {
