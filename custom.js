@@ -17,14 +17,14 @@ $(document).ready(function () {
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
 
-            let $vidOverlay = $(".home-covervid-overlay")
+            let $vidOverlay = $(".home-covervid-overlay") || $(".page-overlay-copy")
 
             if($vidOverlay.length > 0 && $vidOverlay.css('display')==='flex'){
                 $vidOverlay.css('display', 'none');
                 $('iframe').attr('src', '');
             }
 
-            $(".page-overlay-copy").css('display','none')
+            //$(".page-overlay-copy").css('display','none')
             $('body').css('overflow', 'auto');
             $("#menu").css('transform', `translateX(0)`);
 
