@@ -16,6 +16,8 @@ $(document).ready(function () {
         if (menu.hasClass('menu-active')) {
             console.log($('#player'))
 
+            return;
+
 
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
