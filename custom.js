@@ -17,7 +17,7 @@ $(document).ready(function () {
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
 
-            console.log($('#videoDetail'))
+            console.log($('#videoDetail').find('video'))
 
 
             $(".home-covervid-overlay").css('display', 'none');
