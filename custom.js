@@ -17,7 +17,13 @@ $(document).ready(function () {
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
 
-            $(".home-covervid-overlay").css('display', 'none');
+            let $vidOverlay = $(".home-covervid-overlay")
+
+            if(!!$vidOverlay && $vidOverlay.css('display')!=='none'){
+                $vidOverlay.css('display', 'none');
+                $('frame').attr('src', '');
+            }
+
             $(".page-overlay-copy").css('display','none')
             $('body').css('overflow', 'auto');
             $("#menu").css('transform', `translateX(0)`);
