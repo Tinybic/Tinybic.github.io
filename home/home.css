@@ -17,8 +17,6 @@
 
 html {
     font-size: 12px;
-    scrollbar-width: none; /* Firefox 64 */
-    overflow: -moz-scrollbars-none;
 }
 
 .body {
@@ -762,7 +760,8 @@ html.fp-enabled,
 
 
     .search-active{
-        transform: translateX(calc(50vw - 2808px));
+        /*transform: translateX(calc(50vw - 2808px));*/
+        transform: translateX(-1644px);
     }
 }
 
