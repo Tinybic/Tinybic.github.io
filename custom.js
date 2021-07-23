@@ -19,7 +19,7 @@ $(document).ready(function () {
 
             let $vidOverlay = $(".home-covervid-overlay")
 
-            if(!!$vidOverlay && $vidOverlay.css('display')!=='none'){
+            if($vidOverlay.length > 0 && $vidOverlay.css('display')==='flex'){
                 $vidOverlay.css('display', 'none');
                 $('iframe').attr('src', '');
             }
