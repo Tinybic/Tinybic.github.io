@@ -17,10 +17,17 @@ $(document).ready(function () {
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
 
-            let $vidOverlay = $(".home-covervid-overlay") || $(".page-overlay-copy")
+            let $vidOverlay = $(".home-covervid-overlay");
 
             if($vidOverlay.length > 0 && $vidOverlay.css('display')==='flex'){
                 $vidOverlay.css('display', 'none');
+                $('iframe').attr('src', '');
+            }
+
+            let $musicVidOverlay = $(".page-overlay-copy")
+
+            if($musicVidOverlay.length > 0 && $musicVidOverlay.css('display')==='flex'){
+                $musicVidOverlay.css('display', 'none');
                 $('iframe').attr('src', '');
             }
 
