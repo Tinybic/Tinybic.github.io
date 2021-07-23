@@ -14,15 +14,8 @@ $(document).ready(function () {
         let _sContainer = $('.search-container')
 
         if (menu.hasClass('menu-active')) {
-            console.log($('#player'))
-
-            return;
-
-
             menu.removeClass('menu-active');
             sidebar.removeClass('sidebar-contain-active');
-
-
 
             $(".home-covervid-overlay").css('display', 'none');
             $(".page-overlay-copy").css('display','none')
