@@ -21,7 +21,7 @@ $(document).ready(function () {
 
             if(!!$vidOverlay && $vidOverlay.css('display')!=='none'){
                 $vidOverlay.css('display', 'none');
-                $('frame').attr('src', '');
+                $('iframe').attr('src', '');
             }
 
             $(".page-overlay-copy").css('display','none')
