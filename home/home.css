@@ -496,7 +496,9 @@ html.fp-enabled,
 }
 
 .news .footer-link:hover,
-.news .signup.mt20:hover {
+.news .signup.mt20:hover,
+.search-result .footer-link:hover,
+.search-result .signup.mt20:hover{
     color: var(--link-hover-dark);
 }
 
