@@ -469,7 +469,8 @@ html.fp-enabled,
 
 
 /*news page style starts*/
-.news .menu-line {
+.news .menu-line,
+.search-result .menu-line{
     background-color: var(--post-blue);
 }
 
