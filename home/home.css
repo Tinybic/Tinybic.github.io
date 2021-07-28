@@ -500,7 +500,8 @@ html.fp-enabled,
     color: var(--link-hover-dark);
 }
 
-.news .signup.mt20 {
+.news .signup.mt20,
+.search-result .signup.mt20{
     border-color: var(--post-blue);
 }
 
