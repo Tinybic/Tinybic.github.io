@@ -473,7 +473,7 @@ html.fp-enabled,
     background-color: var(--post-blue);
 }
 
-.news .footer-border {
+.news .footer-border,.search-result .footer-border {
     background-color: var(--post-blue);
 }
 
@@ -486,7 +486,11 @@ html.fp-enabled,
 .news .footer-grid-block,
 .news .footer-text,
 .news .footer-link,
-.news .signup.mt20 {
+.news .signup.mt20,
+.search-result .footer-grid-block,
+.search-result .footer-text,
+.search-result .footer-link,
+.search-result .signup.mt20{
     color: var(--post-blue);
 }
 
