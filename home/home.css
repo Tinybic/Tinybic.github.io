@@ -600,7 +600,8 @@ html.fp-enabled,
 
 
 /*eat style starts*/
-.eat .menu-active .menu-line {
+.eat .menu-active .menu-line,
+.search-result .menu-active .menu-line{
     background-color: #ffffff;
 }
 
