@@ -44,11 +44,10 @@ $(document).ready(function () {
         if(_search.hasClass('search-active')){
             _search.removeClass('search-active')
             _sContainer.fadeOut('fast')
-            console.log($('.search-icon-white'))
-            console.log($('.search-icon-white').css('display'))
+
             if($('.search-icon-white').css('display')==='inline-block'){
-                $('.search-icon-blue').fadeOut();
-                $('.search-icon-white').fadeIn();
+                $('.search-icon-blue').fadeIn();
+                $('.search-icon-white').fadeOut();
             }
         }
     }
