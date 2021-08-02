@@ -44,10 +44,12 @@ $(document).ready(function () {
         if(_search.hasClass('search-active')){
             _search.removeClass('search-active')
             _sContainer.fadeOut('fast')
+            $('.search-ipt').val('')
 
             if($('.search-icon-white').css('display')==='inline-block'){
                 $('.search-icon-blue').fadeIn();
                 $('.search-icon-white').fadeOut();
+                $('.main-search-ipt').val('')
             }
         }
     }
