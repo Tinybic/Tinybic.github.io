@@ -799,25 +799,25 @@ html.fp-enabled,
 
 @media screen and (min-width: 1440px) and (max-width: 1920px){
     .search-active{
-        transform: translateX(calc(-100vw + 284px));
+        transform: translateX(calc(-100vw + 284px)) !important;
     }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px){
     .search-active{
-        transform: translateX(calc(-100vw + 190px));
+        transform: translateX(calc(-100vw + 190px)) !important;
     }
 }
 
 @media screen and (min-width: 991px) and (max-width: 1279px){
     .search-active{
-        transform: translateX(calc(-100vw + 180px));
+        transform: translateX(calc(-100vw + 180px)) !important;
     }
 }
 
 @media screen and  (max-width: 990px){
     .search-active{
-        transform: translateX(calc(-100vw + 152px));
+        transform: translateX(calc(-100vw + 152px)) !important;
     }
 }
 
