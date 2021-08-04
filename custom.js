@@ -46,9 +46,8 @@ $(document).ready(function () {
             _sContainer.fadeOut('fast')
             $('.search-ipt').val('')
 
-            if($('.search-icon-white').css('display')==='inline-block'){
-                $('.search-icon-blue').fadeIn();
-                $('.search-icon-white').fadeOut();
+            if($('.search-icon-svg').hasClass('icon-white')){
+                $('.search-icon-svg').removeClass('icon-white')
                 $('.main-search-ipt').val('')
             }
         }
