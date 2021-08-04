@@ -301,6 +301,10 @@ html.fp-enabled,
     height: auto !important;
 }
 
+.icon-white{
+    stroke:#ffffff !important;
+}
+
 .news .swiper-container-horizontal > .swiper-pagination-bullets,
 .news .swiper-pagination-custom, .news .swiper-pagination-fraction {
     bottom: 30px;
