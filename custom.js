@@ -108,4 +108,23 @@ $(document).ready(function () {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
 
+    let _search = $('.home-search')
+    let _menu = $('#menu');
+    let _sContainer = $('.search-container')
+    let _searchSvg = $('.search-icon-svg')
+
+    _search.click(function(){
+        if(_search.hasClass('search-active')){
+            //_search.removeClass('search-active')
+            //_menu.removeClass('menu-active');
+            //_sContainer.fadeOut('fast')
+            $('#siteSearchBtn').click();
+        }else{
+            _searchSvg.addClass('icon-white')
+            _search.addClass('search-active')
+            _menu.addClass('menu-active');
+            _sContainer.fadeIn('fast')
+        }
+    })
+
 });
