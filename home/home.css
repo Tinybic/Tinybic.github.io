@@ -310,7 +310,7 @@ html.fp-enabled,
     -webkit-text-fill-color:  #fff;
     -webkit-box-shadow: 0 0 0px 1000px #0016c1 inset;
 }
-.icon-white{
+.search-icon-svg.icon-white{
     stroke:#ffffff !important;
 }
 
