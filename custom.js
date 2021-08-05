@@ -2,6 +2,12 @@ let wWidth = window.innerWidth;
 
 $(document).ready(function () {
 
+    $('.search-svg').hover(function () {
+        $('.header').addClass('bg-white');
+    }, function () {
+        $('.header').removeClass('bg-white');
+    })
+
     let year = new Date().getFullYear();
     $(".copyright-year").each(function (e) {
         $(this).text('© ' + year + " Lovett")
