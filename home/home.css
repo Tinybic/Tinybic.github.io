@@ -56,10 +56,14 @@ input:-internal-autofill-selected {
     -webkit-box-shadow: 0 0 0px 1000px #3e0900 inset;
 }
 
-.eat .main-search-contain input:-webkit-autofill{
+.eat .main-search-contain input:-webkit-autofill,
+.eat .mail-contain input:-webkit-autofill{
+    color: #ffffff;
     -webkit-box-shadow: 0 0 0px 1000px #f54544 inset;
 }
-.eat .main-search-contain input:autofill{
+.eat .main-search-contain input:autofill,
+.eat .mail-contain input:autofill{
+    color: #ffffff;
     -webkit-box-shadow: 0 0 0px 1000px #f54544 inset;
 }
 
