@@ -49,10 +49,12 @@ input:-internal-autofill-selected {
 
 .mail-contain input:-webkit-autofill,
 .main-search-contain input:-webkit-autofill{
+    color: #ffffff !important;
     -webkit-box-shadow: 0 0 0px 1000px #3e0900 inset;
 }
 .mail-contain input:autofill,
 .main-search-contain input:autofill{
+    color: #ffffff !important;
     -webkit-box-shadow: 0 0 0px 1000px #3e0900 inset;
 }
 
