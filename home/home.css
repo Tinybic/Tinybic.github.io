@@ -47,6 +47,22 @@ input:-internal-autofill-selected {
     background-color: transparent !important;
 }
 
+.mail-contain input:-webkit-autofill,
+.main-search-contain input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px #3e0900 inset;
+}
+.mail-contain input:autofill,
+.main-search-contain input:autofill{
+    -webkit-box-shadow: 0 0 0px 1000px #3e0900 inset;
+}
+
+.eat .main-search-contain input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px #f54544 inset;
+}
+.eat .main-search-contain input:autofill{
+    -webkit-box-shadow: 0 0 0px 1000px #f54544 inset;
+}
+
 /*!
  * fullPage 2.9.7
  * https://github.com/alvarotrigo/fullPage.js
