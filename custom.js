@@ -105,6 +105,8 @@ $(document).ready(function () {
         });
     })
     $('.close-mail').click(function () {
+        $('.success-message').hide()
+        $('#email-form').show();
         $("#subscribe").removeClass('sidebar-contain-active');
     })
 
