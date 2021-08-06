@@ -108,6 +108,7 @@ $(document).ready(function () {
         $('.success-message').hide()
         $('#email-form').show();
         $("#subscribe").removeClass('sidebar-contain-active');
+        clearTimeout();
     })
 
 
