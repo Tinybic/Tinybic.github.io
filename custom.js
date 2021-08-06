@@ -110,6 +110,35 @@ $(document).ready(function () {
         $("#subscribe").removeClass('sidebar-contain-active');
     })
 
+
+    //submit email
+    $('#emailSubmitBtn').click(function(e){
+        e.preventDefault();
+        let email = $('#EMAIL-2').val();
+        if(email.match(/@/ig)){
+            $.ajax({
+                type: "GET",
+                url: `https://intownhomes.com/getdata/savenewletter3.ashx?email=${email}&phone=&firstname=&lastname=&request=`,
+                success: function(res){
+                    $('#email-form').hide();
+                    $('.success-message').show()
+                    setTimeout(function(){
+                        if($('#subscribe').hasClass('sidebar-contain-active')){
+                            $('.close-mail').click()
+                        }
+                    },3000)
+                },
+                error: function(err){
+                    console.log('error: ',JSON.stringify(err))
+                }
+            });
+        }
+    })
+
+    $('#closeSignup').click(function(){
+        $('.close-mail').click()
+    })
+
     window.addEventListener("resize", function () {
         wWidth = window.innerWidth;
         let vh = window.innerHeight;
