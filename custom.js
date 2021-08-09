@@ -155,11 +155,13 @@ $(document).ready(function () {
 
     _search.click(function(){
         if(_search.hasClass('search-active')){
+            enableScroll()
             //_search.removeClass('search-active')
             //_menu.removeClass('menu-active');
             //_sContainer.fadeOut('fast')
             $('#siteSearchBtn').click();
         }else{
+            disableScroll()
             _searchSvg.addClass('icon-white')
             _search.addClass('search-active')
             _menu.addClass('menu-active');
