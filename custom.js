@@ -102,11 +102,13 @@ $(document).ready(function () {
 
     $('.signup').each(function () {
         $(this).click(function () {
+            disableScroll()
             let mail = $("#subscribe");
             mail.addClass('sidebar-contain-active');
         });
     })
     $('.close-mail').click(function () {
+        enableScroll()
         $('.success-message').hide()
         $('#email-form').show();
         $("#subscribe").removeClass('sidebar-contain-active');
