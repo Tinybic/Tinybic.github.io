@@ -113,7 +113,7 @@ $(document).ready(function () {
         if (email.match(/@/ig)) {
             $.ajax({
                 type: "GET",
-                url: `https://intownhomes.com/getdata/savenewletter3.ashx?email=${email}&phone=&firstname=&lastname=&request=leasingyn=0`,
+                url: `https://intownhomes.com/getdata/savenewletter3.ashx?email=${email}&phone=&firstname=&lastname=&request=&leasingyn=0`,
                 success: function (res) {
                     $('#email-form').hide();
                     $('.success-message').show()
